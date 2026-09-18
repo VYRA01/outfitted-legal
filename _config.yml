@@ -1,0 +1,7 @@
+title: Outfitted
+description: Your closet, organised by Max.
+# GitHub Pages turns links between .md files into links between the pages.
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true

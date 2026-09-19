@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy — Outfitted
 
-**Last updated: 18 September 2026**
+**Last updated: 19 September 2026**
 
 Outfitted is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
@@ -39,8 +39,8 @@ continue.
 **What you post.** Photos or videos you publish to the feed are **public** —
 visible to anyone using the app, not only to people who follow you.
 
-**Social activity and music.** Who you follow, likes, blocks and reports; songs
-you like, playlists and recently played songs.
+**Social activity and music.** Who you follow, likes, reposts, blocks and
+reports; songs you like, playlists and recently played songs.
 
 **Plan and usage.** Your plan, how many metered features (cut-outs,
 upscales, try-ons) you have used this month, and how many times today you have
@@ -117,8 +117,9 @@ shops; opening one takes you to that shop, under its own privacy policy.
 ## Who can see what
 
 **Public:** your username, profile photo, bio, "currently" answers, follower and
-following counts, your posts (photo or video, caption, song), and comments you
-write on posts.
+following counts, your posts (photo or video, caption, song), comments you
+write on posts, and which posts you repost — a repost shows the post, still
+credited to its author, to the people who follow you.
 
 **Private to you:** your closet, saved outfits, calendar plans, conversations
 with Max, saved songs and playlists, and who you have blocked or reported. Other
@@ -131,6 +132,11 @@ stored privately. The app shows them to you through links signed for your
 account that stop working after an hour; other users, and anyone who comes
 across an old link, cannot open them. A photo becomes public only when you
 publish it as a post, which puts a copy in the public feed.
+
+**Sharing a post** hands a link to its photo or video, and the author's
+username, to the app you pick from your phone's share sheet. What that app
+does with it is under its own privacy policy. The link points at the post, so
+it stops working if the author deletes it.
 
 The sample-closet photos are provided by us.
 
@@ -157,9 +163,9 @@ Your data stays until you delete it. Deleting an item removes it and its photo;
 deleting a post removes its photo or video.
 
 **Delete Account**, in your profile, permanently removes your account, clothes,
-photos, outfits, plans, posts, comments, likes, follows and conversations with
-Max. It cannot be undone. Copies in our providers' backups, where they exist, are
-overwritten after a short period.
+photos, outfits, plans, posts, comments, likes, reposts, follows and
+conversations with Max. It cannot be undone. Copies in our providers' backups,
+where they exist, are overwritten after a short period.
 
 Sample-closet accounts are temporary and may be removed at any time. We may keep
 a record of reports and the action taken on them for as long as needed to keep

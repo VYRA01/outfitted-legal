@@ -39,8 +39,9 @@ continue.
 **What you post.** Photos or videos you publish to the feed are **public** —
 visible to anyone using the app, not only to people who follow you.
 
-**Social activity and music.** Who you follow, likes, reposts, blocks and
-reports; songs you like, playlists and recently played songs.
+**Social activity and music.** Who you follow, likes, reposts, posts you save,
+votes in polls, blocks and reports; songs you like, playlists and recently
+played songs.
 
 **Plan and usage.** Your plan, how many metered features (cut-outs,
 upscales, try-ons) you have used this month, and how many times today you have
@@ -118,20 +119,24 @@ shops; opening one takes you to that shop, under its own privacy policy.
 
 **Public:** your username, profile photo, bio, "currently" answers, follower and
 following counts, your posts (photo or video, caption, song), comments you
-write on posts, and which posts you repost — a repost shows the post, still
-credited to its author, to the people who follow you.
+write on posts, which posts you repost — a repost shows the post, still
+credited to its author, to the people who follow you — and the pieces you tag
+on a post: each one's photo, type, colours, brand and pattern.
 
-**Private to you:** your closet, saved outfits, calendar plans, conversations
-with Max, saved songs and playlists, and who you have blocked or reported. Other
-users cannot list, read or change these; this is enforced by the database, not
-only by the app.
+**Private to you:** your closet, saved outfits, saved posts, how you voted in
+polls (others see only the totals, the poll's author included), calendar plans,
+conversations with Max, saved songs and playlists, and who you have blocked or
+reported. Other users cannot list, read or change these; this is enforced by the
+database, not only by the app.
 
 **Your photos stay private.** Your closet photos, photos you send to Max,
 photos used for styling or try-on, and the images Max makes from them are
 stored privately. The app shows them to you through links signed for your
 account that stop working after an hour; other users, and anyone who comes
 across an old link, cannot open them. A photo becomes public only when you
-publish it as a post, which puts a copy in the public feed.
+publish it as a post, which puts a copy in the public feed, or tag the piece it
+shows on a post, which makes a public copy of that one piece's photo. Nothing
+else of your closet is shown, and a piece's notes and price never are.
 
 **Sharing a post** hands a link to its photo or video, and the author's
 username, to the app you pick from your phone's share sheet. What that app
@@ -163,9 +168,9 @@ Your data stays until you delete it. Deleting an item removes it and its photo;
 deleting a post removes its photo or video.
 
 **Delete Account**, in your profile, permanently removes your account, clothes,
-photos, outfits, plans, posts, comments, likes, reposts, follows and
-conversations with Max. It cannot be undone. Copies in our providers' backups,
-where they exist, are overwritten after a short period.
+photos, outfits, plans, posts, comments, likes, reposts, saved posts, poll
+votes, follows and conversations with Max. It cannot be undone. Copies in our
+providers' backups, where they exist, are overwritten after a short period.
 
 Sample-closet accounts are temporary and may be removed at any time. We may keep
 a record of reports and the action taken on them for as long as needed to keep

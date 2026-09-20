@@ -110,7 +110,7 @@ We do **not** sell your data, and we do not use it to train AI models.
 | Everything you store in the app | **Supabase** — database, sign-in and file storage, hosted in the EU | To run the service |
 | Garment photos, photos of you for try-on, messages to Max with a summary of your wardrobe, photos you try to publish | **Max, on servers we operate** | To recognise clothes, answer you, create try-on images and check photos against the rules |
 | The same kinds of data, **only when our own Max server is unavailable** | **Anthropic** (Claude API) | The same purposes |
-| Song searches, and the song player | **Google** (YouTube Data API and embedded player) | To find and play music on posts |
+| Song searches, the song player, and the words you type into shop search | **Google** (YouTube Data API, the embedded player, and the Custom Search API behind shop results) | To find and play music on posts, and to find clothes to buy |
 | Subscription payments, once available | **Apple** | To take payment and manage renewals |
 | A page address you paste into the board or the wishlist — fetched by your phone, not by us | **That website** | To read the picture the page offers for sharing |
 | Your approximate location (rounded to about 1 km), only when weather is on — sent directly from your phone | **MET Norway**, the Norwegian Meteorological Institute, in the EEA | To get the forecast |
@@ -134,11 +134,15 @@ Weather data comes from MET Norway under the
 [CC BY 4.0 licence](https://api.met.no/doc/License); the app summarises it
 (current conditions and today's range) rather than showing it unchanged.
 
-Songs play through YouTube's official player. We store only a video's identifier,
-title, channel and thumbnail — never the audio or video itself.
+Songs play through YouTube's official player, on its privacy-enhanced host
+(youtube-nocookie.com), which holds off on cookies and profile-building until
+somebody presses play. We store only a video's identifier, title, channel and
+thumbnail — never the audio or video itself.
 
-When you use shop search, the words you search for go into links to online
-shops; opening one takes you to that shop, under its own privacy policy.
+When you use shop search, the words you type go to Google's Custom Search API,
+through our own Max server, to find matching items, and they appear in the
+links to the shops. We do not keep what you searched for. Opening a result
+takes you to that shop, under its own privacy policy.
 
 ## Who can see what
 

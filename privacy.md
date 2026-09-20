@@ -225,7 +225,10 @@ votes, follows, your wishlist, the record of pieces that have left, looks
 friends made for you, and conversations with Max. It cannot be undone. Copies in our
 providers' backups, where they exist, are overwritten after a short period.
 
-Sample-closet accounts are temporary and may be removed at any time. We may keep
+Sample-closet accounts are temporary. They cannot post, like, comment or
+follow, and finishing one deletes the account, its rows and its photos there
+and then. One left behind — closed rather than finished — is cleared
+automatically the following night, a day after it was made. We may keep
 a record of reports and the action taken on them for as long as needed to keep
 the community safe and to meet legal obligations.
 

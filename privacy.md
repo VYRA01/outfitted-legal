@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy — Outfitted
 
-**Last updated: 20 September 2026**
+**Last updated: 24 September 2026**
 
 Outfitted is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
@@ -93,8 +93,8 @@ contains no advertising or analytics SDKs.
 - **To provide the app you signed up for** (contract): storing your closet,
   running Max, showing your posts, planning outfits, managing a subscription.
 - **To keep Outfitted safe** (legitimate interests): checking photos before they
-  are published, acting on reports and blocks, preventing abuse and securing the
-  service.
+  are published, acting on reports and blocks, preventing abuse, securing the
+  service, and the operator's console described under "Who can see what".
 - **Where the law requires it** (legal obligation): for example, responding to
   lawful requests.
 - **Your consent**: your approximate location, for the weather. You give it by
@@ -193,6 +193,17 @@ username, to the app you pick from your phone's share sheet. What that app
 does with it is under its own privacy policy. The link points at the post, so
 it stops working if the author deletes it.
 
+**We can see it, and there is a record of when.** Running Outfitted means the
+owner can open an operator's console, which is not part of the app. It shows how
+the app is being used: who has an account and when they last signed in, what
+they have posted, how much is in their closet and which brands, which shops they
+have saved links from, and what they have been doing in Outfitted. It is there to
+keep the service running and to act on reports. Only an account on an
+administrator list can open it — the database refuses everyone else, so knowing
+the address is not a way in — and every screen of it writes down who looked, at
+what, and when. Nothing in it can change or delete what is yours. **Your
+conversations with Max are not in it:** they are counted and never read.
+
 The sample-closet photos are provided by us.
 
 ## What the app asks permission for
@@ -231,6 +242,10 @@ and then. One left behind — closed rather than finished — is cleared
 automatically the following night, a day after it was made. We may keep
 a record of reports and the action taken on them for as long as needed to keep
 the community safe and to meet legal obligations.
+
+The record of who opened the operator's console, and what they looked at, is
+kept for two years and then deleted automatically, so that access to your data
+can be accounted for.
 
 ## Your rights
 

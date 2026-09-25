@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy — Outfitted
 
-**Last updated: 24 September 2026**
+**Last updated: 25 September 2026**
 
 Outfitted is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
@@ -112,6 +112,7 @@ We do **not** sell your data, and we do not use it to train AI models.
 | The same kinds of data, **only when our own Max server is unavailable** | **Anthropic** (Claude API) | The same purposes |
 | Song searches, the song player, and the words you type into shop search | **Google** (YouTube Data API, the embedded player, and the Custom Search API behind shop results) | To find and play music on posts, and to find clothes to buy |
 | Subscription payments, once available | **Apple** | To take payment and manage renewals |
+| The first five characters of a one-way hash of the password you choose — sent from your phone, never the password itself | **Have I Been Pwned** | To warn you if that password has already appeared in a known data breach |
 | A page address you paste into the board or the wishlist — fetched by your phone, not by us | **That website** | To read the picture the page offers for sharing |
 | Your approximate location (rounded to about 1 km), only when weather is on — sent directly from your phone | **MET Norway**, the Norwegian Meteorological Institute, in the EEA | To get the forecast |
 | The name of a trip's destination, only when weather is on — looked up on your phone | **Apple** or **Google**, through your phone's built-in map service | To find the place, for its forecast |
@@ -123,12 +124,22 @@ the European Commission's Standard Contractual Clauses. Their own policies:
 [Google](https://policies.google.com/privacy) ·
 [YouTube Terms](https://www.youtube.com/t/terms) ·
 [Apple](https://www.apple.com/legal/privacy/) ·
-[MET Norway](https://api.met.no/doc/TermsOfService).
+[MET Norway](https://api.met.no/doc/TermsOfService) ·
+[Have I Been Pwned](https://haveibeenpwned.com/Privacy).
 
 The rough carbon figures in Insights are averages published by ADEME, the
 French environment agency, for one garment of each kind. They are not a
 measurement of your own clothes, and nothing about your closet is sent to
 ADEME — the figures are built into the app.
+
+**Checking a password against known breaches.** Hundreds of millions of real
+passwords are public, taken from sites that were broken into, and attackers try
+them in bulk. So when you choose a password, the app hashes it on your phone and
+sends only the first five characters of that hash to Have I Been Pwned. They
+answer with every leaked hash that begins with those five — hundreds of them —
+and the comparison happens on your phone. Your password never leaves it, the
+rest of the hash is never sent, and nobody is told whether the answer matched.
+If the check cannot be made, signing up carries on regardless.
 
 Weather data comes from MET Norway under the
 [CC BY 4.0 licence](https://api.met.no/doc/License); the app summarises it

@@ -22,7 +22,18 @@ to act on them within 24 hours.
 
 **How do I turn off reminders?**
 
-Profile, then Occasion reminders.
+Profile, then the gear (Settings), then Occasion reminders.
+
+**Max isn't answering, or a try-on won't finish.**
+
+Max runs on our own server, which is occasionally restarted. Wait a minute
+and try again; a try-on takes three to four minutes to draw. If it keeps
+failing, email us and say what you were doing.
+
+**Can I change the app's language or look?**
+
+Profile, then the gear (Settings): English, Polski, Deutsch, Español or
+Français, light or dark, larger text, high contrast and your own colours.
 
 **How do I stop the app using my location?**
 

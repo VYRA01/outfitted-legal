@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy — Outfitted
 
-**Last updated: 25 September 2026**
+**Last updated: 3 October 2026**
 
 Outfitted is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
@@ -110,6 +110,7 @@ We do **not** sell your data, and we do not use it to train AI models.
 | Everything you store in the app | **Supabase** — database, sign-in and file storage, hosted in the EU | To run the service |
 | Garment photos, photos of you for try-on, messages to Max with a summary of your wardrobe, photos you try to publish | **Max, on servers we operate** | To recognise clothes, answer you, create try-on images and check photos against the rules |
 | The same kinds of data, **only when our own Max server is unavailable** | **Anthropic** (Claude API) | The same purposes |
+| Your connection to Max, encrypted end to end so that it cannot read what is sent, and your IP address | **Tailscale**, which relays the connection to our server | To reach Max from anywhere |
 | Song searches, the song player, and the words you type into shop search | **Google** (YouTube Data API, the embedded player, and the Custom Search API behind shop results) | To find and play music on posts, and to find clothes to buy |
 | Subscription payments, once available | **Apple** | To take payment and manage renewals |
 | The first five characters of a one-way hash of the password you choose — sent from your phone, never the password itself | **Have I Been Pwned** | To warn you if that password has already appeared in a known data breach |
@@ -117,7 +118,7 @@ We do **not** sell your data, and we do not use it to train AI models.
 | Your approximate location (rounded to about 1 km), only when weather is on — sent directly from your phone | **MET Norway**, the Norwegian Meteorological Institute, in the EEA | To get the forecast |
 | The name of a trip's destination, only when weather is on — looked up on your phone | **Apple** or **Google**, through your phone's built-in map service | To find the place, for its forecast |
 
-Anthropic and Google may process data outside the EU, under safeguards such as
+Anthropic, Google and Tailscale may process data outside the EU, under safeguards such as
 the European Commission's Standard Contractual Clauses. Their own policies:
 [Supabase](https://supabase.com/privacy) ·
 [Anthropic](https://www.anthropic.com/legal/privacy) ·
@@ -125,7 +126,8 @@ the European Commission's Standard Contractual Clauses. Their own policies:
 [YouTube Terms](https://www.youtube.com/t/terms) ·
 [Apple](https://www.apple.com/legal/privacy/) ·
 [MET Norway](https://api.met.no/doc/TermsOfService) ·
-[Have I Been Pwned](https://haveibeenpwned.com/Privacy).
+[Have I Been Pwned](https://haveibeenpwned.com/Privacy) ·
+[Tailscale](https://tailscale.com/privacy-policy).
 
 The rough carbon figures in Insights are averages published by ADEME, the
 French environment agency, for one garment of each kind. They are not a
@@ -161,7 +163,9 @@ takes you to that shop, under its own privacy policy.
 following counts, your posts (photo or video, caption, song), comments you
 write on posts, which posts you repost — a repost shows the post, still
 credited to its author, to the people who follow you — and the pieces you tag
-on a post: each one's photo, type, colours, brand and pattern.
+on a post: each one's photo, type, colours, brand and pattern, and a general
+name for it such as "t-shirt" or "cap" — never a name you typed yourself,
+which stays in your closet.
 
 **Only if you turn closet sharing on:** your closet stays private unless you
 choose "Friends" in Closet sharing, and friends means people you follow who

@@ -5,7 +5,7 @@ permalink: /terms/
 
 # Terms of Use — Outfitted
 
-**Last updated: 20 September 2026**
+**Last updated: 11 October 2026**
 
 These terms are the agreement between you and **Chris Leszczynski**, in
 Poland ("we", "us"), who runs Outfitted.
@@ -110,8 +110,11 @@ measurement of your own clothes and are not advice.
 
 ## 7. Music
 
-Songs are found and played through YouTube's official player. Your use of that
-player is also governed by the [YouTube Terms of Service](https://www.youtube.com/t/terms).
+The music that plays on posts was shared by its artists under Creative Commons
+licences (CC0 or CC BY); the artist and the licence are shown with it. A known
+song on a post is only named. Tapping it opens a music service of your choice,
+outside Outfitted and under that service's own terms; Outfitted does not play
+it.
 
 ## 8. Subscriptions
 

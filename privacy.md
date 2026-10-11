@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy — Outfitted
 
-**Last updated: 10 October 2026**
+**Last updated: 11 October 2026**
 
 Outfitted is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
@@ -127,7 +127,9 @@ We do **not** sell your data, and we do not use it to train AI models.
 | Garment photos, photos of you for try-on, messages to Max with a summary of your wardrobe, photos you try to publish | **Max, on servers we operate** | To recognise clothes, answer you, create try-on images and check photos against the rules |
 | The same kinds of data, **only when our own Max server is unavailable** | **Anthropic** (Claude API) | The same purposes |
 | Your connection to Max, encrypted end to end so that it cannot read what is sent, and your IP address | **Tailscale**, which relays the connection to our server | To reach Max from anywhere |
-| Song searches, the song player, and the words you type into shop search | **Google** (YouTube Data API, the embedded player, and the Custom Search API behind shop results) | To find and play music on posts, and to find clothes to buy |
+| The words you type to find a known song by name — sent directly from your phone | **Apple** (its public song search) | To find the song, so that it can be named on a post |
+| The words you type to find free music | **Openverse**, the catalogue of openly licensed works run by the WordPress Foundation — asked by our server, not by your phone | To find music that may be played on posts |
+| The words you type into shop search | **Google** (the Custom Search API behind shop results) | To find clothes to buy |
 | Subscription payments, once available | **Apple** | To take payment and manage renewals |
 | The first five characters of a one-way hash of the password you choose — sent from your phone, never the password itself | **Have I Been Pwned** | To warn you if that password has already appeared in a known data breach |
 | A page address you paste into the board or the wishlist — fetched by your phone, not by us | **That website** | To read the picture the page offers for sharing |
@@ -140,7 +142,7 @@ the European Commission's Standard Contractual Clauses. Their own policies:
 [Supabase](https://supabase.com/privacy) ·
 [Anthropic](https://www.anthropic.com/legal/privacy) ·
 [Google](https://policies.google.com/privacy) ·
-[YouTube Terms](https://www.youtube.com/t/terms) ·
+[Openverse](https://docs.openverse.org/terms_of_service.html) ·
 [Apple](https://www.apple.com/legal/privacy/) ·
 [MET Norway](https://api.met.no/doc/TermsOfService) ·
 [Have I Been Pwned](https://haveibeenpwned.com/Privacy) ·
@@ -164,10 +166,15 @@ Weather data comes from MET Norway under the
 [CC BY 4.0 licence](https://api.met.no/doc/License); the app summarises it
 (current conditions and today's range) rather than showing it unchanged.
 
-Songs play through YouTube's official player, on its privacy-enhanced host
-(youtube-nocookie.com), which holds off on cookies and profile-building until
-somebody presses play. We store only a video's identifier, title, channel and
-thumbnail — never the audio or video itself.
+Music on posts is of two kinds. Free music, which its artists shared under a
+Creative Commons licence, is played by the app from where its catalogue keeps
+it (Jamendo, Freesound or Wikimedia Commons), which sees your IP address as
+any website you load a file from does. A known song is only named on a post:
+we store what it is called and who it is by, and nothing else of it. If you
+tap it and choose where to listen, your phone opens Spotify, Apple Music or
+YouTube Music with a search for that name — outside Outfitted, under that
+service's own terms and privacy policy. No player of theirs is built into the
+app, and nothing is sent to them unless you open one.
 
 When you use shop search, the words you type go to Google's Custom Search API,
 through our own Max server, to find matching items, and they appear in the

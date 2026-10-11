@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy — Outfitted
 
-**Last updated: 3 October 2026**
+**Last updated: 10 October 2026**
 
 Outfitted is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
@@ -38,7 +38,13 @@ brand, price, when you added it, when it went and why. It is what lets the app
 tell you how long your clothes last.
 
 **Photos of you.** A selfie or full-body photo, when you use styling or try-on,
-and your profile photo if you set one.
+and your profile photo if you set one. To draw a try-on of you as you are, Max
+looks at that photo for two things besides your pose: your build, and whether
+it plainly shows a man or a woman. Both are used for that one picture's
+drawing and nothing else. They are not saved with your account, not shown to
+anyone, and where the photo does not make it plain, nothing is assumed. A note
+you add to a try-on ("jacket zipped up") is read by Max the same way and is
+used only if it is about how the clothes are worn.
 
 **How you use your wardrobe.** Outfits you save, days you plan them for, and the
 cost-per-wear figures worked out from those.
@@ -84,6 +90,15 @@ destination you typed is looked up by your phone's own map service (Apple's on
 an iPhone, Google's on Android) to find the place, and that place's rounded
 position goes to MET Norway for its forecast. We never receive either.
 
+**A place on a post — only if you add one.** When you publish a post you can
+say where it was. You can type the place, or press "use where I am": your
+phone's own map service (Apple's on an iPhone, Google's on Android) then turns
+its position into the name of your town, and that name is put in the box for
+you to keep, change or clear. Only the name you leave there is saved, with the
+post, and it is shown to everyone who can see the post. We never receive or
+store the position itself, and nothing is looked up unless you press the
+button.
+
 We do **not** collect your precise location, contacts or advertising
 identifiers, we do not track you across other apps or websites, and the app
 contains no advertising or analytics SDKs.
@@ -97,9 +112,10 @@ contains no advertising or analytics SDKs.
   service, and the operator's console described under "Who can see what".
 - **Where the law requires it** (legal obligation): for example, responding to
   lawful requests.
-- **Your consent**: your approximate location, for the weather. You give it by
-  allowing location when you turn weather on, and you can withdraw it at any
-  time in your phone's settings.
+- **Your consent**: your approximate location, for the weather and for naming
+  your town on a post when you ask for that. You give it by allowing location
+  when you turn weather on or press "use where I am", and you can withdraw it
+  at any time in your phone's settings.
 
 We do **not** sell your data, and we do not use it to train AI models.
 
@@ -117,6 +133,7 @@ We do **not** sell your data, and we do not use it to train AI models.
 | A page address you paste into the board or the wishlist — fetched by your phone, not by us | **That website** | To read the picture the page offers for sharing |
 | Your approximate location (rounded to about 1 km), only when weather is on — sent directly from your phone | **MET Norway**, the Norwegian Meteorological Institute, in the EEA | To get the forecast |
 | The name of a trip's destination, only when weather is on — looked up on your phone | **Apple** or **Google**, through your phone's built-in map service | To find the place, for its forecast |
+| Your position, only when you press "use where I am" on a post — looked up on your phone | **Apple** or **Google**, through your phone's built-in map service | To name your town, for the post |
 
 Anthropic, Google and Tailscale may process data outside the EU, under safeguards such as
 the European Commission's Standard Contractual Clauses. Their own policies:

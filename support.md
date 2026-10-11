@@ -15,6 +15,10 @@ Something not working, a question, or a request about your data? Email
 In the app: Profile, then Delete account at the bottom. It permanently removes
 your account, clothes, outfits, posts and photos.
 
+No longer have the app? Email krzysiu.leszcz@outlook.com from the address on your account and
+ask for the account to be deleted. We delete it, with everything in it, and
+write back when it is done, within one month at the latest.
+
 **How do I report a post or block someone?**
 
 From the post's menu, or from their profile. Reports are reviewed, and we aim
@@ -27,8 +31,8 @@ Profile, then the gear (Settings), then Occasion reminders.
 **Max isn't answering, or a try-on won't finish.**
 
 Max runs on our own server, which is occasionally restarted. Wait a minute
-and try again; a try-on takes three to four minutes to draw. If it keeps
-failing, email us and say what you were doing.
+and try again; a try-on takes anything from twenty seconds to a few minutes
+to draw. If it keeps failing, email us and say what you were doing.
 
 **Can I change the app's language or look?**
 
@@ -37,8 +41,10 @@ Français, light or dark, larger text, high contrast and your own colours.
 
 **How do I stop the app using my location?**
 
-Location is only used for the weather, and only if you turned it on. Turn it
-off in your phone's Settings, under the app's Location permission.
+Location is used for two things, and only when you ask: the weather, if you
+turned it on, and the name of your town on a post, if you pressed "use where
+I am". Turn it off in your phone's Settings, under the app's Location
+permission. A place already on a post stays there until you delete the post.
 
 **Can I get a copy of my data, or have it corrected?**
 

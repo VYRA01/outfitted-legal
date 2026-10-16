@@ -23,11 +23,12 @@
   <a class="brand" href="./" aria-label="Outfitted home"><svg class="mark" width="34" height="34" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="285" stroke-width="30" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="22.06" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="22.06" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="22.06" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="22.06" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="22.06" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="22.06" pathLength="1"/></g></svg><b>outfitted</b></a>
   <nav aria-label="Main">
     <a class="hide-sm" href="#max">Max</a>
-    <a class="hide-sm" href="#plan">Plan</a>
+    <a class="hide-sm" href="#how">How it works</a>
+    <a class="hide-sm" href="#faq">FAQ</a>
     <a href="./privacy/">Privacy</a>
     <a href="./support/">Support</a>
   </nav>
-</div></header>
+</div><div class="progress" aria-hidden="true"></div></header>
 <main>
   <section class="hero"><div class="wrap">
     <div>
@@ -47,6 +48,10 @@
   </div></section>
 
   <hr class="seam">
+
+  <section class="statement"><div class="wrap">
+    <p class="words">Stop asking what to wear. Your closet already knows, and Max knows your closet.</p>
+  </div></section>
 
   <section class="feature" id="max"><div class="wrap">
     <div class="text">
@@ -110,21 +115,72 @@
     </div>
   </div></section>
 
-  <section class="feature flip" id="plan"><div class="wrap">
+  <section class="ask" id="ask"><div class="wrap">
     <div class="text">
-      <span class="tag"><svg class="hex" viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path d="M7 0.75 H93 L99.25 10 L93 19.25 H7 L0.75 10 Z" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>Plan ahead</span>
-      <h2>Mornings stop being a decision.</h2>
-      <p>Put outfits on your calendar for the week. Add the days that matter, like a wedding, a birthday or an interview, with the dress code, and Max plans the look around the forecast for that day.</p>
-      <ul>
-        <li>Reminders a week before, the evening before and on the morning.</li>
-        <li>Today's outfit on your lock screen, without opening the app.</li>
-      </ul>
+      <span class="tag"><svg class="hex" viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path d="M7 0.75 H93 L99.25 10 L93 19.25 H7 L0.75 10 Z" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>Ask Max</span>
+      <h2>Ask him like you’d ask a friend.</h2>
+      <p>Max answers from your closet, the forecast and the day you’ve got coming. Not from a catalogue.</p>
     </div>
-    <div class="pair">
-      <div class="phone"><img src="assets/shots/4-calendar.jpg" alt="A month of planned outfits on the calendar, with a wedding coming up in three days" width="600" height="1304" loading="lazy"></div>
-      <div class="phone"><img src="assets/shots/5-occasion-day.jpg" alt="Planning the outfit for Sam and Alex’s wedding: pick the clothes or plan with Max" width="600" height="1304" loading="lazy"></div>
+    <div class="chat" role="figure" aria-label="An example chat with Max">
+      <div class="chat-head"><svg class="avatar" viewBox="0 0 100 100" aria-hidden="true">
+  <defs><linearGradient id="max-avatar" x1="0.15" y1="0.05" x2="0.85" y2="1">
+    <stop offset="0" stop-color="#4BA9FF"/><stop offset="0.5" stop-color="#8C7CFF"/><stop offset="1" stop-color="#F673E6"/>
+  </linearGradient></defs>
+  <circle cx="50" cy="50" r="50" fill="url(#max-avatar)"/>
+  <rect x="24" y="31.5" width="20" height="25" rx="10" fill="#fff"/><rect x="56" y="31.5" width="20" height="25" rx="10" fill="#fff"/>
+  <circle cx="35" cy="46" r="5.75" fill="#0A0A24"/><circle cx="67" cy="46" r="5.75" fill="#0A0A24"/>
+  <path d="M40 65 H60 Q60 76 50 76 Q40 76 40 65 Z" fill="#0A0A24"/>
+</svg><div><b>max</b><span>your stylist</span></div></div>
+      <div class="chat-body">
+        <div class="msg me">Which shoes go best with my black cargo pants?</div>
+        <div class="msg max">Your black and white high-tops: clean, grounded, ready for anything. The white sneakers work too, but the high-tops add more edge.</div>
+        <div class="msg me">And for Sam &amp; Alex’s wedding on Saturday?</div>
+        <div class="msg max">Smart casual, cloudy, 13–23°. I’ll put a look on your calendar, with a layer for the evening.</div>
+      </div>
+      <div class="chat-input" aria-hidden="true"><span class="typed">Message Max…</span><span class="send"></span></div>
     </div>
   </div></section>
+
+  <section class="how" id="how" style="--steps: 4">
+    <div class="how-pin"><div class="wrap">
+      <div class="how-text">
+        <span class="tag"><svg class="hex" viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path d="M7 0.75 H93 L99.25 10 L93 19.25 H7 L0.75 10 Z" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>How it works</span>
+        <h2>From a photo to an outfit.</h2>
+        <ol class="steps">
+          <li class="step on"><span class="node" aria-hidden="true"></span><h3 data-of="4">Snap it</h3><p>Photograph a piece. Max names it, with its colours, pattern and seasons, and files it in your closet.</p></li>
+          <li class="step"><span class="node" aria-hidden="true"></span><h3 data-of="4">Ask Max</h3><p>What goes with these trousers, what to wear tonight, what your closet is missing. He only suggests clothes you own.</p></li>
+          <li class="step"><span class="node" aria-hidden="true"></span><h3 data-of="4">Plan the week</h3><p>Put outfits on the calendar, and mornings stop being a decision. Reminders come a week before, the evening before and on the day.</p></li>
+          <li class="step"><span class="node" aria-hidden="true"></span><h3 data-of="4">Dress for the day</h3><p>A wedding, an interview, a birthday: add the dress code and Max plans the look around the forecast for that day.</p></li>
+        </ol>
+      </div>
+      <div class="how-phone">
+        <div class="phone"><div class="screens">
+          <img class="screen on" src="assets/shots/7-add-item.jpg" alt="Adding a new piece to the closet from a photo" width="600" height="1304" loading="lazy">
+          <img class="screen" src="assets/shots/3-max-chat.jpg" alt="Chatting with Max about which shoes go with black cargo pants" width="600" height="1304" loading="lazy">
+          <img class="screen" src="assets/shots/4-calendar.jpg" alt="A month of planned outfits on the calendar" width="600" height="1304" loading="lazy">
+          <img class="screen" src="assets/shots/5-occasion-day.jpg" alt="Planning the outfit for Sam and Alex’s wedding" width="600" height="1304" loading="lazy">
+        </div></div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="gallery" id="screens">
+    <div class="gallery-pin">
+      <div class="wrap gallery-head">
+        <span class="tag"><svg class="hex" viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path d="M7 0.75 H93 L99.25 10 L93 19.25 H7 L0.75 10 Z" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>Every screen</span>
+        <h2>Made around your closet.</h2>
+      </div>
+      <div class="track">
+        <figure><div class="phone"><img src="assets/shots/1-closet-weather.jpg" alt="Your closet: and today’s weather" width="600" height="1304" loading="lazy"></div><figcaption><b>Your closet</b> and today’s weather</figcaption></figure>
+        <figure><div class="phone"><img src="assets/shots/7-add-item.jpg" alt="Add a piece: Max sorts it" width="600" height="1304" loading="lazy"></div><figcaption><b>Add a piece</b> Max sorts it</figcaption></figure>
+        <figure><div class="phone"><img src="assets/shots/3-max-chat.jpg" alt="Ask Max: from what you own" width="600" height="1304" loading="lazy"></div><figcaption><b>Ask Max</b> from what you own</figcaption></figure>
+        <figure><div class="phone"><img src="assets/shots/4-calendar.jpg" alt="Your month: planned in outfits" width="600" height="1304" loading="lazy"></div><figcaption><b>Your month</b> planned in outfits</figcaption></figure>
+        <figure><div class="phone"><img src="assets/shots/5-occasion-day.jpg" alt="The big day: with its dress code" width="600" height="1304" loading="lazy"></div><figcaption><b>The big day</b> with its dress code</figcaption></figure>
+        <figure><div class="phone"><img src="assets/shots/6-mood-folders.jpg" alt="Mood folders: Cozy, Chill, Date night" width="600" height="1304" loading="lazy"></div><figcaption><b>Mood folders</b> Cozy, Chill, Date night</figcaption></figure>
+        <figure><div class="phone"><img src="assets/shots/8-feed.jpg" alt="The feed: looks, with a song" width="600" height="1304" loading="lazy"></div><figcaption><b>The feed</b> looks, with a song</figcaption></figure>
+      </div>
+    </div>
+  </section>
 
   <section class="feature" id="share"><div class="wrap">
     <div class="text">
@@ -155,6 +211,10 @@
     </div>
   </div></section>
 
+  <section class="ribbon" aria-label="Outfitted speaks English, Polski, Deutsch, Español and Français">
+    <div class="ribbon-track" aria-hidden="true"><span class="">hello</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg><span class="hollow">cześć</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg><span class="">hallo</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg><span class="hollow">hola</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg><span class="">salut</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg><span class="">hello</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg><span class="hollow">cześć</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg><span class="">hallo</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg><span class="hollow">hola</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg><span class="">salut</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg><span class="">hello</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg><span class="hollow">cześć</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg><span class="">hallo</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg><span class="hollow">hola</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg><span class="">salut</span><svg class="mark" width="40" height="40" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="292.5" stroke-width="15" pathLength="1"/><circle cx="300" cy="300" r="260.25" stroke-width="22.5" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="16.5" pathLength="1"/><line x1="189" y1="224" x2="404" y2="219" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="16.5" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="16.5" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="16.5" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="16.5" pathLength="1"/></g></svg></div>
+  </section>
+
   <section class="private" id="private"><div class="wrap">
     <div>
       <span class="tag"><svg class="hex" viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path d="M7 0.75 H93 L99.25 10 L93 19.25 H7 L0.75 10 Z" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>Private by design</span>
@@ -165,6 +225,23 @@
       <div><dt>Location only when you ask.</dt><dd>Your approximate location is used for the forecast if you turn weather on, and to name your town on a post if you choose to.</dd></div>
       <div><dt>No ads. No tracking.</dt><dd>And you can delete your account, with everything in it, from inside the app.</dd></div>
     </dl>
+  </div></section>
+
+  <section class="faq" id="faq"><div class="wrap">
+    <div>
+      <span class="tag"><svg class="hex" viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path d="M7 0.75 H93 L99.25 10 L93 19.25 H7 L0.75 10 Z" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>Questions</span>
+      <h2>Good to know.</h2>
+      <p>Something else? <a href="mailto:krzysiu.leszcz@outlook.com">Email us</a>.</p>
+    </div>
+    <div class="qa">
+      <details><summary>When can I get it?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>Android first: a closed test on Google Play is starting now, and you can <a href="mailto:krzysiu.leszcz@outlook.com?subject=Outfitted%20Android%20test">ask to join it</a>. The iPhone version follows on the App Store.</p></div></details>
+      <details><summary>Is my closet private?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>Yes. Your closet photos open only for you. Your approximate location is used only when you ask: for the forecast if you turn weather on, and to name your town on a post if you choose to. No ads, no tracking.</p></div></details>
+      <details><summary>How does Max know what I own?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>You photograph each piece once. Max recognises what it is, its colours, pattern and seasons, and even guesses the brand. You can correct anything he gets wrong.</p></div></details>
+      <details><summary>Is a try-on a real photo?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>No. Max draws you wearing the look from a full-body photo you add. Try-ons you share carry an “AI try-on” label, so nobody takes them for a photo.</p></div></details>
+      <details><summary>Does it work offline?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>Your closet is there, but Max needs a connection: recognising clothes, chatting and drawing try-ons all happen on our server.</p></div></details>
+      <details><summary>Which languages?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>English, Polski, Deutsch, Español and Français, with light and dark mode, larger text, a high-contrast look and colours of your own.</p></div></details>
+      <details><summary>Can I delete everything?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>Yes, from inside the app: Profile, then Delete account. It removes your account, clothes, outfits, posts and photos for good.</p></div></details>
+    </div>
   </div></section>
 
   <section class="early" id="early"><div class="wrap">
@@ -191,31 +268,47 @@
 <script>
 /*
  * The home page's scroll animations, inlined at the end of index.html by
- * build-site.mjs. They only run when the <head> has added .motion to <html>,
- * which it does unless the reader asked for reduced motion -- so with no
- * script, or that setting, everything is simply there.
+ * build-site.mjs. The moving ones only run when the <head> has added .motion
+ * to <html>, which it does unless the reader asked for reduced motion -- so
+ * with no script, or that setting, the page is all there, standing still.
  *
- *   - Words and phones rise into place as they scroll in, one after another.
- *   - The logo draws itself line by line, as the app's loading mark does:
- *     in the header when the page opens, and in the invite as it arrives.
- *   - The hero's rings and the second phone of each pair drift a little
- *     slower than the page, so the phones stand off the paper.
+ * Two kinds:
+ *   - Things that happen once, as they arrive: words and phones rise into
+ *     place, the logo draws itself line by line (as the app's loading mark
+ *     does), the chat with Max plays out.
+ *   - Things tied to the scroll itself, worked out every frame in tick():
+ *     the hero straightening its phone as you leave it, the big line filling
+ *     in word by word, How it works holding still while its phone changes
+ *     screen, the gallery sliding sideways, the hello ribbon running faster
+ *     the faster you scroll, and the reading seam under the header.
+ *
+ * How it works pins whatever the setting, since it only moves when you do;
+ * with reduced motion its screens change without fading.
  */
 (() => {
   const root = document.documentElement;
-  if (!root.classList.contains('motion')) return;
+  const motion = root.classList.contains('motion');
+  const $ = (s, el = document) => el.querySelector(s);
+  const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+  const clamp = (v, lo = 0, hi = 1) => Math.min(hi, Math.max(lo, v));
 
-  /* Rising into place. Each group's members are delayed one after another. */
+  /* ---- Once, as they arrive ------------------------------------------- */
+
   const GROUPS = [
     '.hero .wrap > div:first-child > *',
     '.hero .phone',
     '.feature .text > :not(ul)',
     '.feature li',
     '.pair .phone',
+    '.ask .text > *',
+    '.chat',
+    '.gallery-head > *',
     '.more .wrap > :not(.grid)',
     '.grid .card',
     '.private .wrap > div > *',
     '.private dl > div',
+    '.faq .wrap > div:first-child > *',
+    '.faq details',
     '.early .box',
   ];
   const STEP = 90; // ms between neighbours
@@ -232,60 +325,253 @@
     { rootMargin: '0px 0px -8% 0px', threshold: 0.12 },
   );
 
-  for (const selector of GROUPS) {
-    const members = [...document.querySelectorAll(selector)];
-    members.forEach((el) => {
-      const siblings = members.filter((other) => other.parentElement === el.parentElement);
-      el.style.setProperty('--d', `${Math.min(siblings.indexOf(el) * STEP, MAX_DELAY)}ms`);
-      el.classList.add('reveal');
-      seen.observe(el);
-    });
+  if (motion) {
+    for (const selector of GROUPS) {
+      const members = $$(selector);
+      members.forEach((el) => {
+        const siblings = members.filter((other) => other.parentElement === el.parentElement);
+        el.style.setProperty('--d', `${Math.min(siblings.indexOf(el) * STEP, MAX_DELAY)}ms`);
+        el.classList.add('reveal');
+        seen.observe(el);
+      });
+    }
+
+    /* The logo drawing itself: rings first, then the collar's lines. */
+    for (const mark of $$('.top .mark, .early .mark')) {
+      $$('circle, line, path', mark).forEach((part, i) => part.style.setProperty('--d', `${i * 110}ms`));
+      mark.classList.add('draw');
+    }
+    requestAnimationFrame(() => requestAnimationFrame(() => $('.top')?.classList.add('in')));
   }
 
-  /* The logo drawing itself: rings first, then the collar's lines. */
-  for (const mark of document.querySelectorAll('.top .mark, .early .mark')) {
-    mark.querySelectorAll('circle, line, path').forEach((part, i) => {
-      part.style.setProperty('--d', `${i * 110}ms`);
-    });
-    mark.classList.add('draw');
+  /* The chat with Max, played out when it comes into view: what you type
+     appears in the box and is sent, then Max types, then answers. Played
+     again if it leaves the screen and comes back. */
+  const chat = $('.chat');
+  if (chat && motion) {
+    const messages = $$('.msg', chat);
+    const typed = $('.typed', chat);
+    const body = $('.chat-body', chat);
+    const dots = document.createElement('div');
+    dots.className = 'msg max dots';
+    dots.innerHTML = '<i></i><i></i><i></i>';
+    let run = 0;
+    const wait = (ms, id) => new Promise((go, stop) => setTimeout(() => (id === run ? go() : stop()), ms));
+    const reset = () => {
+      run++;
+      messages.forEach((m) => m.classList.remove('shown'));
+      dots.remove();
+      typed.textContent = 'Message Max…';
+      typed.classList.remove('typing');
+      chat.classList.add('playing');
+    };
+    async function play() {
+      reset();
+      const id = run;
+      try {
+        await wait(500, id);
+        for (const msg of messages) {
+          if (msg.classList.contains('me')) {
+            typed.textContent = '';
+            typed.classList.add('typing');
+            for (const ch of msg.textContent) {
+              typed.textContent += ch;
+              await wait(28, id);
+            }
+            await wait(250, id);
+            typed.textContent = 'Message Max…';
+            typed.classList.remove('typing');
+            msg.classList.add('shown');
+            await wait(450, id);
+          } else {
+            body.insertBefore(dots, msg);
+            await wait(1100, id);
+            dots.remove();
+            msg.classList.add('shown');
+            await wait(1200, id);
+          }
+        }
+      } catch {
+        /* a newer play took over */
+      }
+    }
+    reset();
+    new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) play();
+      else if (entry.boundingClientRect.top > innerHeight || entry.boundingClientRect.bottom < 0) reset();
+    }, { threshold: 0.45 }).observe(chat);
   }
-  requestAnimationFrame(() => requestAnimationFrame(() => document.querySelector('.top')?.classList.add('in')));
+
+  /* Feature cards lean toward the cursor, a little. */
+  if (motion && matchMedia('(hover: hover)').matches) {
+    for (const card of $$('.card')) {
+      card.addEventListener('pointermove', (e) => {
+        const box = card.getBoundingClientRect();
+        const x = (e.clientX - box.left) / box.width - 0.5;
+        const y = (e.clientY - box.top) / box.height - 0.5;
+        card.style.setProperty('--rx', `${(-y * 7).toFixed(2)}deg`);
+        card.style.setProperty('--ry', `${(x * 9).toFixed(2)}deg`);
+        card.style.setProperty('--gx', `${((x + 0.5) * 100).toFixed(1)}%`);
+        card.style.setProperty('--gy', `${((y + 0.5) * 100).toFixed(1)}%`);
+      });
+      card.addEventListener('pointerleave', () => {
+        card.style.setProperty('--rx', '0deg');
+        card.style.setProperty('--ry', '0deg');
+      });
+    }
+  }
+
+  /* ---- Tied to the scroll ---------------------------------------------- */
+
+  const hero = $('.hero');
+  const words = (() => {
+    const line = $('.statement .words');
+    if (!line) return null;
+    const parts = line.textContent.trim().split(/\s+/);
+    line.innerHTML = parts.map((w) => `<span>${w}</span>`).join(' ');
+    line.setAttribute('aria-label', parts.join(' '));
+    return { line, spans: $$('span', line) };
+  })();
+
+  /* How it works: tall section, one screen tall pin inside it. */
+  const how = $('.how');
+  const steps = how ? $$('.step', how) : [];
+  const screens = how ? $$('.screen', how) : [];
+  if (how) how.classList.add('pinned');
+  let shownStep = 0;
+
+  /* The gallery: as tall as the track is wide, so a scroll down is a slide across. */
+  const gallery = motion ? $('.gallery') : null;
+  const track = gallery ? $('.track', gallery) : null;
+  const figures = track ? $$('figure', track) : [];
+  let slide = 0;
+  function sizeGallery() {
+    if (!gallery) return;
+    gallery.classList.add('pinned');
+    slide = Math.max(0, track.scrollWidth - track.clientWidth);
+    gallery.style.height = `${slide + innerHeight}px`;
+  }
+
+  /* The ribbon: always drifting, faster with the scroll, turning with it. */
+  const ribbon = motion ? $('.ribbon-track') : null;
+  let ribbonX = 0;
+  let setWidth = 0;
+  let direction = 1;
+  let lastY = scrollY;
+  let lastT = performance.now();
+  let velocity = 0;
+  const sizeRibbon = () => {
+    if (ribbon) setWidth = ribbon.scrollWidth / 3;
+  };
 
   /* Drift: [element, how far it lags the page, as a share of its distance
      from the middle of the screen]. */
-  const drifting = [
-    ...[...document.querySelectorAll('.hero .rings')].map((el) => [el, 0.18]),
-    ...[...document.querySelectorAll('.pair .phone:nth-child(2)')].map((el) => [el, 0.1]),
-  ];
-  let queued = false;
-  function drift() {
-    queued = false;
-    // Whatever a jump (a link, a reload part-way down, a flick) carried past
-    // without it ever being on screen is simply shown, not left blank above.
-    for (const el of document.querySelectorAll('.reveal:not(.in)')) {
-      if (el.getBoundingClientRect().bottom < 0) {
-        el.classList.add('in');
-        seen.unobserve(el);
+  const drifting = motion
+    ? [...$$('.hero .rings').map((el) => [el, 0.18]), ...$$('.pair .phone:nth-child(2)').map((el) => [el, 0.1])]
+    : [];
+
+  function tick(t) {
+    const dt = Math.min(0.05, (t - lastT) / 1000);
+    lastT = t;
+    const vh = innerHeight;
+    const dy = scrollY - lastY;
+    lastY = scrollY;
+    velocity = velocity * 0.88 + (dt ? dy / dt : 0) * 0.12;
+    if (dy) direction = dy > 0 ? 1 : -1;
+
+    // The reading seam under the header.
+    const most = document.documentElement.scrollHeight - vh;
+    root.style.setProperty('--page', most > 0 ? (scrollY / most).toFixed(4) : '0');
+
+    if (motion) {
+      // Whatever a jump carried past without it ever being on screen is
+      // simply shown, not left blank above.
+      for (const el of $$('.reveal:not(.in)')) {
+        if (el.getBoundingClientRect().bottom < 0) {
+          el.classList.add('in');
+          seen.unobserve(el);
+        }
+      }
+
+      // Leaving the hero: its phone straightens and comes forward.
+      if (hero) {
+        const box = hero.getBoundingClientRect();
+        hero.style.setProperty('--hp', clamp(-box.top / box.height).toFixed(4));
+      }
+
+      // The big line fills in, word by word, as it crosses the screen.
+      if (words) {
+        const box = words.line.getBoundingClientRect();
+        const p = clamp((vh * 0.85 - box.top) / (box.height + vh * 0.4));
+        const lit = p * (words.spans.length + 1);
+        words.spans.forEach((span, i) => {
+          span.style.opacity = (0.16 + 0.84 * clamp(lit - i)).toFixed(3);
+        });
+      }
+
+      for (const [el, lag] of drifting) {
+        // Measured on the parent, which does not move, so the drift does not feed on itself.
+        const box = el.parentElement.getBoundingClientRect();
+        if (box.bottom < -200 || box.top > vh + 200) continue;
+        el.style.setProperty('--py', `${((box.top + box.height / 2 - vh / 2) * lag).toFixed(1)}px`);
+      }
+
+      // The gallery slides across while it holds still.
+      if (gallery) {
+        const box = gallery.getBoundingClientRect();
+        const p = clamp(-box.top / Math.max(1, box.height - vh));
+        track.style.transform = `translate3d(${(-p * slide).toFixed(1)}px, 0, 0)`;
+        const middle = innerWidth / 2;
+        for (const fig of figures) {
+          const f = fig.getBoundingClientRect();
+          const off = clamp((f.left + f.width / 2 - middle) / innerWidth, -1, 1);
+          fig.style.setProperty('--off', off.toFixed(3));
+        }
+      }
+
+      // The ribbon.
+      if (ribbon && setWidth) {
+        const box = ribbon.getBoundingClientRect();
+        if (box.bottom > 0 && box.top < vh) {
+          const speed = 40 + Math.min(1400, Math.abs(velocity)) * 0.5;
+          ribbonX -= direction * speed * dt;
+          ribbonX = ((ribbonX % setWidth) - setWidth) % setWidth;
+          ribbon.style.transform = `translate3d(${ribbonX.toFixed(1)}px, 0, 0)`;
+        }
       }
     }
-    const middle = innerHeight / 2;
-    for (const [el, lag] of drifting) {
-      // Measured on the parent, which does not move, so the drift does not feed on itself.
-      const box = el.parentElement.getBoundingClientRect();
-      if (box.bottom < -200 || box.top > innerHeight + 200) continue;
-      const off = box.top + box.height / 2 - middle;
-      el.style.setProperty('--py', `${(off * lag).toFixed(1)}px`);
+
+    // How it works: the step is how far through its tall section you are.
+    if (how) {
+      const box = how.getBoundingClientRect();
+      const p = clamp(-box.top / Math.max(1, box.height - vh));
+      how.style.setProperty('--fill', p.toFixed(4));
+      const step = Math.min(steps.length - 1, Math.floor(p * steps.length));
+      if (step !== shownStep) {
+        steps[shownStep].classList.remove('on');
+        screens[shownStep].classList.remove('on');
+        steps[step].classList.add('on');
+        screens[step].classList.add('on');
+        steps.forEach((s, i) => s.classList.toggle('done', i < step));
+        shownStep = step;
+      }
     }
+
+    requestAnimationFrame(tick);
   }
-  const ask = () => {
-    if (!queued) {
-      queued = true;
-      requestAnimationFrame(drift);
-    }
-  };
-  addEventListener('scroll', ask, { passive: true });
-  addEventListener('resize', ask);
-  drift();
+
+  sizeGallery();
+  sizeRibbon();
+  addEventListener('resize', () => {
+    sizeGallery();
+    sizeRibbon();
+  });
+  // Pictures arriving change the track's width.
+  addEventListener('load', () => {
+    sizeGallery();
+    sizeRibbon();
+  });
+  requestAnimationFrame(tick);
 })();
 /*
  * Max's face on the home page, following the cursor. Inlined into index.html

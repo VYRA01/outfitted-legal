@@ -1,5 +1,6 @@
 title: Outfitted
 description: Your closet, organised by Max.
+baseurl: /outfitted-legal
 # GitHub Pages turns links between .md files into links between the pages.
 plugins:
   - jekyll-relative-links

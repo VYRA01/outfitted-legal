@@ -119,7 +119,7 @@ h1, h2, h3 { font-family: var(--head); line-height: 1.08; letter-spacing: -0.02e
   box-shadow: 0 0 0 1px var(--seam), 0 30px 60px -20px rgba(0, 0, 0, 0.35);
 }
 .phone img { border-radius: 32px; background: var(--shot); width: 100%; height: auto; }
-.phone.tilt { transform: rotate(4deg); }
+.phone.tilt { rotate: 4deg; }
 
 /* Seam: the thin line that runs through the collar. */
 .seam { border: 0; border-top: 1px solid var(--seam); margin: 0; }
@@ -220,6 +220,43 @@ h1, h2, h3 { font-family: var(--head); line-height: 1.08; letter-spacing: -0.02e
   .phone { border-radius: 32px; padding: 6px; }
   .phone img { border-radius: 26px; }
 }
+/*
+ * Scroll animations (motion.js). Everything here is under .motion, which the
+ * page only sets when the reader has not asked for reduced motion. Rising in
+ * uses `translate` and the hero's settling `rotate`, so they never fight the
+ * drift, which uses `transform`.
+ */
+.motion .reveal {
+  opacity: 0;
+  translate: 0 28px;
+  transition:
+    opacity 0.7s ease var(--d, 0ms),
+    translate 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms),
+    rotate 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms);
+}
+.motion .reveal.in { opacity: 1; translate: 0 0; }
+.motion .hero .phone.reveal { translate: 0 60px; rotate: 11deg; }
+.motion .hero .phone.reveal.in { translate: 0 0; rotate: 4deg; }
+.motion .pair .phone.reveal { translate: 0 70px; }
+.motion .pair .phone.reveal.in { translate: 0 0; }
+
+/* The hero's rings open out when the page does, then drift. */
+.motion .hero .rings { animation: rings-open 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+@keyframes rings-open { from { scale: 0.82; opacity: 0; } }
+.motion .hero .rings,
+.motion .pair .phone:nth-child(2) { transform: translate3d(0, var(--py, 0px), 0); will-change: transform; }
+
+/* The logo drawing itself, line by line (pathLength is 1 on every part). */
+.motion .mark.draw circle,
+.motion .mark.draw line,
+.motion .mark.draw path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 0.9s cubic-bezier(0.6, 0, 0.3, 1) var(--d, 0ms);
+}
+.motion .top.in .mark.draw *,
+.motion .early .box.in .mark.draw * { stroke-dashoffset: 0; }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .btn { transition: none; }

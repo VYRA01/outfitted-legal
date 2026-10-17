@@ -122,20 +122,39 @@
       <p>Max answers from your closet, the forecast and the day you’ve got coming. Not from a catalogue.</p>
     </div>
     <div class="chat" role="figure" aria-label="An example chat with Max">
-      <div class="chat-head"><svg class="avatar" viewBox="0 0 100 100" aria-hidden="true">
-  <defs><linearGradient id="max-avatar" x1="0.15" y1="0.05" x2="0.85" y2="1">
-    <stop offset="0" stop-color="#4BA9FF"/><stop offset="0.5" stop-color="#8C7CFF"/><stop offset="1" stop-color="#F673E6"/>
-  </linearGradient></defs>
-  <circle cx="50" cy="50" r="50" fill="url(#max-avatar)"/>
-  <rect x="24" y="31.5" width="20" height="25" rx="10" fill="#fff"/><rect x="56" y="31.5" width="20" height="25" rx="10" fill="#fff"/>
-  <circle cx="35" cy="46" r="5.75" fill="#0A0A24"/><circle cx="67" cy="46" r="5.75" fill="#0A0A24"/>
-  <path d="M40 65 H60 Q60 76 50 76 Q40 76 40 65 Z" fill="#0A0A24"/>
+      <div class="chat-head"><svg class="orb" viewBox="0 0 100 100" aria-hidden="true" data-orb>
+  <defs>
+    <radialGradient id="orb-head-base" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#F7FBFF"/><stop offset="0.5" stop-color="#B4D8FF"/><stop offset="1" stop-color="#4F93FA"/></radialGradient>
+    <radialGradient id="orb-head-c0"><stop offset="0" stop-color="#1C64F2" stop-opacity="0.95"/><stop offset="0.6" stop-color="#1C64F2" stop-opacity="0.332"/><stop offset="1" stop-color="#1C64F2" stop-opacity="0"/></radialGradient><radialGradient id="orb-head-c1"><stop offset="0" stop-color="#3FBDF5" stop-opacity="0.9"/><stop offset="0.6" stop-color="#3FBDF5" stop-opacity="0.315"/><stop offset="1" stop-color="#3FBDF5" stop-opacity="0"/></radialGradient><radialGradient id="orb-head-c2"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="0.6" stop-color="#FFFFFF" stop-opacity="0.35"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="orb-head-shine" cx="34%" cy="26%" r="30%"><stop offset="0" stop-color="#fff" stop-opacity="0.95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <clipPath id="orb-head-clip"><circle cx="50" cy="50" r="50"/></clipPath>
+  </defs>
+  <g clip-path="url(#orb-head-clip)">
+    <circle cx="50" cy="50" r="50" fill="url(#orb-head-base)"/>
+    <circle cx="50" cy="50" r="36" fill="url(#orb-head-c0)" transform="translate(27.00 0.00)" data-reach="0.27" data-speed="1" data-offset="0"/><circle cx="50" cy="50" r="36" fill="url(#orb-head-c1)" transform="translate(-11.08 16.12)" data-reach="0.23" data-speed="-1" data-offset="0.33"/><circle cx="50" cy="50" r="36" fill="url(#orb-head-c2)" transform="translate(-10.72 -13.51)" data-reach="0.2" data-speed="2" data-offset="0.66"/>
+    <circle class="orb-shine" cx="50" cy="50" r="50" fill="url(#orb-head-shine)"/>
+  </g>
+  <circle cx="50" cy="50" r="49.4" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.25"/>
 </svg><div><b>max</b><span>your stylist</span></div></div>
       <div class="chat-body">
         <div class="msg me">Which shoes go best with my black cargo pants?</div>
         <div class="msg max">Your black and white high-tops: clean, grounded, ready for anything. The white sneakers work too, but the high-tops add more edge.</div>
         <div class="msg me">And for Sam &amp; Alex’s wedding on Saturday?</div>
         <div class="msg max">Smart casual, cloudy, 13–23°. I’ll put a look on your calendar, with a layer for the evening.</div>
+        <div class="thinking" hidden><svg class="orb" viewBox="0 0 100 100" aria-hidden="true" data-orb data-state="thinking">
+  <defs>
+    <radialGradient id="orb-think-base" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#F7FBFF"/><stop offset="0.5" stop-color="#B4D8FF"/><stop offset="1" stop-color="#4F93FA"/></radialGradient>
+    <radialGradient id="orb-think-c0"><stop offset="0" stop-color="#1C64F2" stop-opacity="0.95"/><stop offset="0.6" stop-color="#1C64F2" stop-opacity="0.332"/><stop offset="1" stop-color="#1C64F2" stop-opacity="0"/></radialGradient><radialGradient id="orb-think-c1"><stop offset="0" stop-color="#3FBDF5" stop-opacity="0.9"/><stop offset="0.6" stop-color="#3FBDF5" stop-opacity="0.315"/><stop offset="1" stop-color="#3FBDF5" stop-opacity="0"/></radialGradient><radialGradient id="orb-think-c2"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="0.6" stop-color="#FFFFFF" stop-opacity="0.35"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="orb-think-shine" cx="34%" cy="26%" r="30%"><stop offset="0" stop-color="#fff" stop-opacity="0.95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <clipPath id="orb-think-clip"><circle cx="50" cy="50" r="50"/></clipPath>
+  </defs>
+  <g clip-path="url(#orb-think-clip)">
+    <circle cx="50" cy="50" r="50" fill="url(#orb-think-base)"/>
+    <circle cx="50" cy="50" r="36" fill="url(#orb-think-c0)" transform="translate(27.00 0.00)" data-reach="0.27" data-speed="1" data-offset="0"/><circle cx="50" cy="50" r="36" fill="url(#orb-think-c1)" transform="translate(-11.08 16.12)" data-reach="0.23" data-speed="-1" data-offset="0.33"/><circle cx="50" cy="50" r="36" fill="url(#orb-think-c2)" transform="translate(-10.72 -13.51)" data-reach="0.2" data-speed="2" data-offset="0.66"/>
+    <circle class="orb-shine" cx="50" cy="50" r="50" fill="url(#orb-think-shine)"/>
+  </g>
+  <circle cx="50" cy="50" r="49.4" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.25"/>
+</svg><span>Max is thinking…</span></div>
       </div>
       <div class="chat-input" aria-hidden="true"><span class="typed">Message Max…</span><span class="send"></span></div>
     </div>
@@ -345,22 +364,26 @@
   }
 
   /* The chat with Max, played out when it comes into view: what you type
-     appears in the box and is sent, then Max types, then answers. Played
-     again if it leaves the screen and comes back. */
+     appears in the box and is sent, then Max thinks -- his orb in the header
+     turning faster and a small one under the chat, as in the app -- then
+     answers. Played again if it leaves the screen and comes back. */
   const chat = $('.chat');
   if (chat && motion) {
     const messages = $$('.msg', chat);
     const typed = $('.typed', chat);
     const body = $('.chat-body', chat);
-    const dots = document.createElement('div');
-    dots.className = 'msg max dots';
-    dots.innerHTML = '<i></i><i></i><i></i>';
+    const thinking = $('.thinking', chat);
+    const headOrb = $('.chat-head [data-orb]', chat);
+    const think = (on) => {
+      thinking.hidden = !on;
+      headOrb.dataset.state = on ? 'thinking' : 'idle';
+    };
     let run = 0;
     const wait = (ms, id) => new Promise((go, stop) => setTimeout(() => (id === run ? go() : stop()), ms));
     const reset = () => {
       run++;
       messages.forEach((m) => m.classList.remove('shown'));
-      dots.remove();
+      think(false);
       typed.textContent = 'Message Max…';
       typed.classList.remove('typing');
       chat.classList.add('playing');
@@ -384,9 +407,9 @@
             msg.classList.add('shown');
             await wait(450, id);
           } else {
-            body.insertBefore(dots, msg);
-            await wait(1100, id);
-            dots.remove();
+            think(true);
+            await wait(1300, id);
+            think(false);
             msg.classList.add('shown');
             await wait(1200, id);
           }
@@ -464,6 +487,15 @@
     if (ribbon) setWidth = ribbon.scrollWidth / 3;
   };
 
+  const orbs = $$('[data-orb]').map((svg) => ({
+    svg,
+    turn: 0,
+    shine: $('.orb-shine', svg),
+    clouds: $$('[data-reach]', svg).map((el) => ({
+      el, reach: +el.dataset.reach, speed: +el.dataset.speed, offset: +el.dataset.offset,
+    })),
+  }));
+
   /* Drift: [element, how far it lags the page, as a share of its distance
      from the middle of the screen]. */
   const drifting = motion
@@ -538,6 +570,26 @@
           ribbonX = ((ribbonX % setWidth) - setWidth) % setWidth;
           ribbon.style.transform = `translate3d(${ribbonX.toFixed(1)}px, 0, 0)`;
         }
+      }
+    }
+
+    // Max's orbs: clouds turning (a whole turn in 9 s, 3 s while thinking)
+    // and a slow breath; under reduced motion only the shine breathes.
+    for (const orb of orbs) {
+      const fast = orb.svg.dataset.state === 'thinking';
+      const s = t / 1000;
+      if (motion) {
+        orb.turn = (orb.turn + dt / (fast ? 3 : 9)) % 1;
+        orb.clouds.forEach((c) => {
+          const a = 2 * Math.PI * (orb.turn * c.speed + c.offset);
+          c.el.setAttribute('transform', `translate(${(Math.cos(a) * c.reach * 100).toFixed(2)} ${(Math.sin(a) * c.reach * 80).toFixed(2)})`);
+        });
+        const breath = fast
+          ? 1.005 + 0.045 * Math.sin((2 * Math.PI * s) / 0.9)
+          : 1 + 0.0125 * (1 - Math.cos((2 * Math.PI * s) / 3.6));
+        orb.svg.style.transform = `scale(${breath.toFixed(4)})`;
+      } else {
+        orb.shine.style.opacity = (0.91 + 0.09 * Math.cos((2 * Math.PI * s) / 2.8)).toFixed(3);
       }
     }
 

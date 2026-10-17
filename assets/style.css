@@ -324,50 +324,6 @@ h1, h2, h3 { font-family: var(--head); line-height: 1.08; letter-spacing: -0.02e
              scale(calc(1 - var(--off, 0) * var(--off, 0) * 0.16));
 }
 
-/* On iPad too: a tablet with its phone twin, and buttons to change screen. */
-.ipad { padding: 96px 0; background: var(--paper-2); overflow: hidden; }
-.ipad-head { text-align: center; max-width: 640px; margin: 0 auto 56px; }
-.ipad-head h2 { font-size: clamp(32px, 4.4vw, 52px); margin: 16px 0 16px; }
-.ipad-head p { color: var(--ink-2); margin: 0; }
-.tablet-stage { position: relative; width: min(560px, 82%); margin: 0 auto; }
-.tablet {
-  position: relative; padding: 14px; border-radius: 38px; background: #141414;
-  box-shadow: 0 0 0 1px var(--seam), 0 50px 80px -40px rgba(0, 0, 0, 0.45);
-}
-.tablet-screens { position: relative; aspect-ratio: 2064 / 2752; }
-.tablet-screens .screen {
-  position: absolute; inset: 0; width: 100%; height: 100%;
-  border-radius: 24px; background: var(--shot); opacity: 0;
-}
-.tablet-screens .screen.on { opacity: 1; }
-/* The phone beside it, over its corner: the same screen, phone-sized. */
-.phone.twin { position: absolute; right: -15%; bottom: -6%; width: 30%; border-radius: 30px; padding: 6px; }
-.phone.twin img { border-radius: 25px; }
-.tablet-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 52px; }
-.tablet-tabs button {
-  padding: 10px 18px; border-radius: 999px; cursor: pointer;
-  font: 600 15px/1 var(--body); color: var(--ink);
-  background: transparent; border: 1.5px solid var(--seam);
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-.tablet-tabs button:hover { border-color: var(--ink); }
-.tablet-tabs button[aria-selected='true'] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-.tablet-tabs button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
-.motion .tablet-screens .screen, .motion .twin .screen {
-  scale: 0.985; transition: opacity 0.6s ease, scale 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
-}
-.motion .tablet-screens .screen.on, .motion .twin .screen.on { scale: 1; }
-/* Scrolling in (--ip, 0 to 1): it lies back, then sits up flat, and its
-   phone slides in from the side a moment later. */
-.motion .ipad .tablet {
-  transform: perspective(1800px) rotateX(calc((1 - var(--ip, 0)) * 32deg)) scale(calc(0.84 + var(--ip, 0) * 0.16));
-  transform-origin: 50% 100%;
-}
-.motion .ipad .twin {
-  opacity: clamp(0, calc(var(--ip, 0) * 2 - 0.8), 1);
-  transform: translateX(calc((1 - var(--ip, 0)) * 120px)) rotate(calc((1 - var(--ip, 0)) * 10deg));
-}
-
 /* "Hello" in each of the app's languages, running with the scroll. */
 .ribbon { overflow: hidden; padding: 30px 0; border-block: 1px solid var(--seam); }
 .ribbon-track { display: flex; align-items: center; gap: 40px; width: max-content; white-space: nowrap; will-change: transform; }
@@ -455,14 +411,6 @@ h1, h2, h3 { font-family: var(--head); line-height: 1.08; letter-spacing: -0.02e
     font: 600 13px/1 var(--body); letter-spacing: 0.12em; color: var(--ink-2);
   }
   .how-phone .phone { width: min(220px, 27svh); }
-  .ipad { padding: 64px 0; }
-  .ipad-head { margin-bottom: 40px; }
-  .tablet-stage { width: 84%; margin-left: 4%; }
-  .phone.twin { right: -12%; border-radius: 20px; padding: 4px; }
-  .phone.twin img { border-radius: 16px; }
-  .tablet { padding: 9px; border-radius: 26px; }
-  .tablet-screens .screen { border-radius: 17px; }
-  .tablet-tabs { margin-top: 40px; }
   .top nav a.hide-sm { display: none; }
   .foot small { margin-left: 0; }
 }

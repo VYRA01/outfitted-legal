@@ -182,6 +182,37 @@
     </div>
   </section>
 
+  <section class="ipad" id="ipad"><div class="wrap">
+    <div class="ipad-head">
+      <span class="tag"><svg class="hex" viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path d="M7 0.75 H93 L99.25 10 L93 19.25 H7 L0.75 10 Z" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>On iPad too</span>
+      <h2>A bigger closet. The same Max.</h2>
+      <p>On iPad, Outfitted spreads out: four pieces to a row, the whole month at a glance, Max’s chat beside your closet. Everything stays in step with your phone. It arrives with the App Store release.</p>
+    </div>
+    <div class="tablet-stage">
+      <div class="tablet"><div class="tablet-screens">
+        <img class="screen on" src="assets/ipad/1-closet-weather.jpg" alt="The closet on iPad: four pieces to a row, with today’s weather and Max’s picks above" width="900" height="1200" loading="lazy">
+        <img class="screen" src="assets/ipad/3-max-chat.jpg" alt="Max’s chat on iPad, beside the closet" width="900" height="1200" loading="lazy">
+        <img class="screen" src="assets/ipad/4-calendar.jpg" alt="A month of outfits on the iPad calendar" width="900" height="1200" loading="lazy">
+        <img class="screen" src="assets/ipad/5-occasion-day.jpg" alt="Planning the outfit for Sam and Alex’s wedding on iPad" width="900" height="1200" loading="lazy">
+        <img class="screen" src="assets/ipad/6-mood-folders.jpg" alt="Saved outfits and mood folders on iPad" width="900" height="1200" loading="lazy">
+      </div></div>
+      <div class="phone twin" aria-hidden="true"><div class="screens">
+        <img class="screen on" src="assets/shots/1-closet-weather.jpg" alt="" width="600" height="1304" loading="lazy">
+        <img class="screen" src="assets/shots/3-max-chat.jpg" alt="" width="600" height="1304" loading="lazy">
+        <img class="screen" src="assets/shots/4-calendar.jpg" alt="" width="600" height="1304" loading="lazy">
+        <img class="screen" src="assets/shots/5-occasion-day.jpg" alt="" width="600" height="1304" loading="lazy">
+        <img class="screen" src="assets/shots/6-mood-folders.jpg" alt="" width="600" height="1304" loading="lazy">
+      </div></div>
+    </div>
+    <div class="tablet-tabs" role="tablist" aria-label="iPad screens">
+      <button type="button" role="tab" aria-selected="true">closet</button>
+      <button type="button" role="tab" aria-selected="false">max</button>
+      <button type="button" role="tab" aria-selected="false">calendar</button>
+      <button type="button" role="tab" aria-selected="false">the big day</button>
+      <button type="button" role="tab" aria-selected="false">moods</button>
+    </div>
+  </div></section>
+
   <section class="feature" id="share"><div class="wrap">
     <div class="text">
       <span class="tag"><svg class="hex" viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path d="M7 0.75 H93 L99.25 10 L93 19.25 H7 L0.75 10 Z" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>Share</span>
@@ -303,6 +334,8 @@
     '.ask .text > *',
     '.chat',
     '.gallery-head > *',
+    '.ipad-head > *',
+    '.tablet-tabs',
     '.more .wrap > :not(.grid)',
     '.grid .card',
     '.private .wrap > div > *',
@@ -421,6 +454,35 @@
     }
   }
 
+  /* The iPad: its buttons change the screen on it and on the phone beside
+     it. It changes by itself every few seconds while on screen, until you
+     pick one (and never with reduced motion). */
+  const ipad = $('.ipad');
+  if (ipad) {
+    const tabs = $$('.tablet-tabs button', ipad);
+    const sets = [$$('.tablet .screen', ipad), $$('.twin .screen', ipad)];
+    let current = 0;
+    let picked = false;
+    let visible = false;
+    const show = (i) => {
+      current = (i + tabs.length) % tabs.length;
+      tabs.forEach((tab, j) => tab.setAttribute('aria-selected', String(j === current)));
+      for (const set of sets) set.forEach((img, j) => img.classList.toggle('on', j === current));
+    };
+    tabs.forEach((tab, i) =>
+      tab.addEventListener('click', () => {
+        picked = true;
+        show(i);
+      }),
+    );
+    if (motion) {
+      new IntersectionObserver(([entry]) => (visible = entry.isIntersecting), { threshold: 0.4 }).observe($('.tablet', ipad));
+      setInterval(() => {
+        if (visible && !picked && !document.hidden) show(current + 1);
+      }, 3800);
+    }
+  }
+
   /* ---- Tied to the scroll ---------------------------------------------- */
 
   const hero = $('.hero');
@@ -526,6 +588,15 @@
           const f = fig.getBoundingClientRect();
           const off = clamp((f.left + f.width / 2 - middle) / innerWidth, -1, 1);
           fig.style.setProperty('--off', off.toFixed(3));
+        }
+      }
+
+      // The iPad lies back, then sits up flat as it comes into view.
+      if (ipad) {
+        const box = $('.tablet-stage', ipad).getBoundingClientRect();
+        if (box.bottom > 0 && box.top < vh) {
+          // Flat by the time its top is a little above the middle of the screen.
+          ipad.style.setProperty('--ip', clamp((vh - box.top) / (vh * 0.6)).toFixed(4));
         }
       }
 

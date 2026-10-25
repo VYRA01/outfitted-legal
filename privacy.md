@@ -48,6 +48,12 @@ anyone, and where the photo does not make it plain, nothing is assumed. A note
 you add to a try-on ("jacket zipped up") is read by Max the same way and is
 used only if it is about how the clothes are worn.
 
+**Other people in your photo.** Friends beside you in a try-on photo are left
+exactly as they were, unless you choose to dress them too. Then Max does for
+each of them what he does for you, for that one picture and nothing else, and
+the picture is marked as made by AI like every try-on. Only dress people who
+are happy for you to.
+
 **How you use your wardrobe.** Outfits you save, days you plan them for, and the
 cost-per-wear figures worked out from those.
 

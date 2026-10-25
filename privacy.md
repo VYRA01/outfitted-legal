@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy — Outfitted
 
-**Last updated: 11 October 2026**
+**Last updated: 25 October 2026**
 
 Outfitted is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
@@ -23,14 +23,16 @@ This policy works together with the [Terms of Use](terms.md).
 **Your account.** An email address and a username. You can change the username
 at any time; it is public.
 
-**Your clothes.** Photographs of garments you add, plus what you or Max record
+**Your clothes.** Photographs of garments you add — or, for a piece you named
+to Max, the picture he drew of it, labelled as drawn — plus what you or Max record
 about them: category, colours, brand, pattern, price, season, any tags you
 write yourself, and any notes.
 
 **Things you want.** Your wishlist: what you called each thing, the address of
 the page you pasted, the address of that page's own picture, the shop's name
 and price where the page gives them, and whether you have bought it. The
-picture itself is never copied to us — it loads from the shop.
+picture itself is never copied to us — it loads from the shop. A piece Max drew
+for you keeps his picture, stored privately as in the closet.
 
 **Pieces that have left.** When you mark a piece as sold, given away, worn out
 or lost, the piece and its photo are deleted and a line is kept: its type,
@@ -267,7 +269,10 @@ contacts or calendar.
 Your data stays until you delete it. Deleting an item removes it and its photo;
 deleting a post removes its photo or video. Saying a piece is gone deletes the
 piece and its photo and keeps the line described above; deleting your account
-removes that too.
+removes that too. A photo you pick for a post is kept privately until the post
+goes up; if it never does — you changed the photo, started over, or it was
+turned down — it is deleted, at once where the app can tell and otherwise two
+weeks after you picked it.
 
 **Delete Account**, in your profile, permanently removes your account, clothes,
 photos, outfits, plans, posts, comments, likes, reposts, saved posts, poll

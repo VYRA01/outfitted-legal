@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy — Outfitted
 
-**Last updated: 25 October 2026**
+**Last updated: 27 October 2026**
 
 Outfitted is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
@@ -60,6 +60,12 @@ cost-per-wear figures worked out from those.
 **Looks friends make for you.** If you share your closet, a look a friend puts
 together is stored as the list of your own pieces they chose and anything they
 wrote with it. Both of you can see it; nobody else can.
+
+**Borrowing between friends.** When you ask to borrow a friend's piece, or a
+friend asks to borrow one of yours, we store which piece it is, who asked, the
+note and return date written with the ask, and whether it was lent, declined,
+taken back or given back. Only the two of you can see it. The reminder on the
+day it is due back is scheduled on the borrower's phone, not sent by us.
 
 **Whether a closet photo has been checked.** Only once you share your closet:
 each photo is put through the same check a photo must pass to be posted, and
@@ -206,7 +212,10 @@ whose photos passed the check — the photo, the type, the colours, the brand
 and the pattern. What a piece cost, the tags you gave it and your notes are
 never sent to them at all. Any single piece can be kept back on its own page,
 blocking someone closes it immediately, and so does either of you unfollowing.
-Turning it back to "Only me" closes it for everyone.
+Turning it back to "Only me" closes it for everyone. The one exception is a
+piece you have lent to someone, or that they have asked to borrow: they can
+still see that one piece's photo until it is given back, declined or the ask is
+taken back, so they know what to return.
 
 **Private to you:** your closet, your wishlist, saved outfits, saved posts, how you voted in
 polls (others see only the totals, the poll's author included), calendar plans,
@@ -283,7 +292,8 @@ weeks after you picked it.
 **Delete Account**, in your profile, permanently removes your account, clothes,
 photos, outfits, plans, posts, comments, likes, reposts, saved posts, poll
 votes, follows, your wishlist, the record of pieces that have left, looks
-friends made for you, and conversations with Max. It cannot be undone. Copies in our
+friends made for you, what you have lent, borrowed or asked to borrow, and
+conversations with Max. It cannot be undone. Copies in our
 providers' backups, where they exist, are overwritten after a short period.
 
 Sample-closet accounts are temporary. They cannot post, like, comment or

@@ -198,8 +198,9 @@ takes you to that shop, under its own privacy policy.
 ## Who can see what
 
 **Public:** your username, profile photo, bio, "currently" answers, follower and
-following counts, your posts (photo or video, caption, song), comments you
-write on posts, which posts you repost — a repost shows the post, still
+following counts, your posts (photo or video, caption, song), whether a post
+is entered in the weekly challenge and, if it wins, its place and number of
+likes, comments you write on posts, which posts you repost — a repost shows the post, still
 credited to its author, to the people who follow you — and the pieces you tag
 on a post: each one's photo, type, colours, brand and pattern, and a general
 name for it such as "t-shirt" or "cap" — never a name you typed yourself,

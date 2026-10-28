@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy — Outfitted
 
-**Last updated: 27 October 2026**
+**Last updated: 28 October 2026**
 
 Outfitted is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
@@ -60,6 +60,14 @@ cost-per-wear figures worked out from those.
 **Looks friends make for you.** If you share your closet, a look a friend puts
 together is stored as the list of your own pieces they chose and anything they
 wrote with it. Both of you can see it; nobody else can.
+
+**Stories.** A photo or short video you add to your story is checked
+against the posting rules first, then kept privately and shown only to the
+people who follow you (never to anyone you have blocked or who has blocked
+you) for 24 hours. After that nobody can open it, and it is deleted within
+the following day. Who has viewed your story is shown to you; when you view
+someone else's, they can see that you did. You can delete a story at any
+time.
 
 **Borrowing between friends.** When you ask to borrow a friend's piece, or a
 friend asks to borrow one of yours, we store which piece it is, who asked, the
@@ -293,8 +301,8 @@ weeks after you picked it.
 **Delete Account**, in your profile, permanently removes your account, clothes,
 photos, outfits, plans, posts, comments, likes, reposts, saved posts, poll
 votes, follows, your wishlist, the record of pieces that have left, looks
-friends made for you, what you have lent, borrowed or asked to borrow, and
-conversations with Max. It cannot be undone. Copies in our
+friends made for you, what you have lent, borrowed or asked to borrow, your
+stories and the record of stories you viewed, and conversations with Max. It cannot be undone. Copies in our
 providers' backups, where they exist, are overwritten after a short period.
 
 Sample-closet accounts are temporary. They cannot post, like, comment or

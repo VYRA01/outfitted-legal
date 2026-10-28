@@ -3,7 +3,7 @@ title: Support
 permalink: /support/
 ---
 
-# Support — Outfitted
+# Support — Hangero
 
 Something not working, a question, or a request about your data? Email
 **krzysiu.leszcz@outlook.com** and we will get back to you.

@@ -3,11 +3,11 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-# Privacy Policy — Outfitted
+# Privacy Policy — Hangero
 
 **Last updated: 28 October 2026**
 
-Outfitted is a wardrobe app. You photograph clothes you own, it organises them,
+Hangero is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
 explains what that involves for your data.
 
@@ -129,7 +129,7 @@ contains no advertising or analytics SDKs.
 
 - **To provide the app you signed up for** (contract): storing your closet,
   running Max, showing your posts, planning outfits, managing a subscription.
-- **To keep Outfitted safe** (legitimate interests): checking photos before they
+- **To keep Hangero safe** (legitimate interests): checking photos before they
   are published, acting on reports and blocks, preventing abuse, securing the
   service, and the operator's console described under "Who can see what".
 - **Where the law requires it** (legal obligation): for example, responding to
@@ -194,7 +194,7 @@ it (Jamendo, Freesound or Wikimedia Commons), which sees your IP address as
 any website you load a file from does. A known song is only named on a post:
 we store what it is called and who it is by, and nothing else of it. If you
 tap it and choose where to listen, your phone opens Spotify, Apple Music or
-YouTube Music with a search for that name — outside Outfitted, under that
+YouTube Music with a search for that name — outside Hangero, under that
 service's own terms and privacy policy. No player of theirs is built into the
 app, and nothing is sent to them unless you open one.
 
@@ -208,7 +208,9 @@ takes you to that shop, under its own privacy policy.
 **Public:** your username, profile photo, bio, "currently" answers, follower and
 following counts, your posts (photo or video, caption, song), whether a post
 is entered in the weekly challenge and, if it wins, its place and number of
-likes, comments you write on posts, which posts you repost — a repost shows the post, still
+likes, the friends you tag on a post and the posts you are tagged on (only
+people who follow each other can tag each other, and you can take your name
+off any post you are tagged on), comments you write on posts, which posts you repost — a repost shows the post, still
 credited to its author, to the people who follow you — and the pieces you tag
 on a post: each one's photo, type, colours, brand and pattern, and a general
 name for it such as "t-shirt" or "cap" — never a name you typed yourself,
@@ -250,7 +252,7 @@ this way sits on your board to work from and is left out of anything you post,
 because it belongs to whoever took it.
 
 **Selling a piece** opens Vinted, Vestiaire Collective or Depop in your
-browser, under that site's own privacy policy. Outfitted lists nothing for you,
+browser, under that site's own privacy policy. Hangero lists nothing for you,
 sends them nothing about you, and takes no part in the sale.
 
 **Sharing a post** hands a link to its photo or video, and the author's
@@ -258,11 +260,11 @@ username, to the app you pick from your phone's share sheet. What that app
 does with it is under its own privacy policy. The link points at the post, so
 it stops working if the author deletes it.
 
-**We can see it, and there is a record of when.** Running Outfitted means the
+**We can see it, and there is a record of when.** Running Hangero means the
 owner can open an operator's console, which is not part of the app. It shows how
 the app is being used: who has an account and when they last signed in, what
 they have posted, how much is in their closet and which brands, which shops they
-have saved links from, and what they have been doing in Outfitted. It is there to
+have saved links from, and what they have been doing in Hangero. It is there to
 keep the service running and to act on reports. Only an account on an
 administrator list can open it — the database refuses everyone else, so knowing
 the address is not a way in — and every screen of it writes down who looked, at
@@ -326,9 +328,9 @@ authority.
 
 ## Children
 
-Outfitted is not for children under **13**. If you are under **16** and live in
+Hangero is not for children under **13**. If you are under **16** and live in
 the EU, you need permission from a parent or guardian. If you believe a child is
-using Outfitted without that, contact us and we will remove the account.
+using Hangero without that, contact us and we will remove the account.
 
 ## Security
 

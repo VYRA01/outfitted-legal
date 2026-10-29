@@ -3,23 +3,23 @@ title: Terms of Use
 permalink: /terms/
 ---
 
-# Terms of Use — Hangero
+# Terms of Use — Outfitkin
 
 **Last updated: 11 October 2026**
 
 These terms are the agreement between you and **Chris Leszczynski**, in
-Poland ("we", "us"), who runs Hangero.
+Poland ("we", "us"), who runs Outfitkin.
 Contact: **krzysiu.leszcz@outlook.com**.
 
 By creating an account or using the app, you agree to these terms and to the
-[Privacy Policy](privacy.md). If you do not agree, do not use Hangero.
+[Privacy Policy](privacy.md). If you do not agree, do not use Outfitkin.
 
 ---
 
-## 1. Who can use Hangero
+## 1. Who can use Outfitkin
 
 You must be at least **13**. If you are under **16** and live in the EU, you
-need permission from a parent or guardian. If you use Hangero for someone
+need permission from a parent or guardian. If you use Outfitkin for someone
 else, you confirm you are allowed to.
 
 ## 2. Your account
@@ -33,11 +33,11 @@ provide. Sample accounts can be removed at any time.
 
 ## 3. Community rules — zero tolerance
 
-Hangero is for sharing clothes. There is **no tolerance** for objectionable
+Outfitkin is for sharing clothes. There is **no tolerance** for objectionable
 content or abusive users. You must not post or send anything that breaks these
 rules, which are also shown before every post:
 
-- You must be fully clothed. Hangero is about clothes.
+- You must be fully clothed. Outfitkin is about clothes.
 - No nudity, sexual content, or anything suggestive.
 - Only post people who agreed to be filmed or photographed.
 - No hate, harassment, threats, or targeting anyone.
@@ -60,13 +60,13 @@ reporting is how you help.
 
 So that the app can work, you give us a worldwide, non-exclusive, royalty-free
 licence to store, process, display and distribute that content **within
-Hangero** — for example, to show your public posts to other users, to create
+Outfitkin** — for example, to show your public posts to other users, to create
 thumbnails, and to run Max on your photos. This licence ends when you delete
 the content or your account, except for copies other users already saved
 through features of the app, and for what the law requires us to keep.
 
 **Posts are public.** Anything you publish to the feed can be seen by anyone
-using Hangero. Your closet, outfits, calendar and conversations with Max are
+using Outfitkin. Your closet, outfits, calendar and conversations with Max are
 private to you unless you turn on closet sharing, which opens your clothes —
 never your notes, prices or tags — to people you follow who follow you back.
 
@@ -97,7 +97,7 @@ Max, closet sorting, styling suggestions and try-on are powered by AI.
 
 ## 6. Shopping, wishlists and selling
 
-Hangero sells nothing. Shop results, wishlist links and the resale sites
+Outfitkin sells nothing. Shop results, wishlist links and the resale sites
 under **Sell it** — Vinted, Vestiaire Collective and Depop — are other
 companies' services, opened in your browser and governed by their own terms.
 We are not part of any purchase or sale, take no commission, and cannot help
@@ -113,12 +113,12 @@ measurement of your own clothes and are not advice.
 The music that plays on posts was shared by its artists under Creative Commons
 licences (CC0 or CC BY); the artist and the licence are shown with it. A known
 song on a post is only named. Tapping it opens a music service of your choice,
-outside Hangero and under that service's own terms; Hangero does not play
+outside Outfitkin and under that service's own terms; Outfitkin does not play
 it.
 
 ## 8. Subscriptions
 
-Hangero is free to use. Some features have monthly limits on the free plan,
+Outfitkin is free to use. Some features have monthly limits on the free plan,
 and paid subscriptions raise or remove them.
 
 - **Subscriptions are sold through the Apple App Store** and billed to your
@@ -133,7 +133,7 @@ and paid subscriptions raise or remove them.
 
 ## 9. Our app
 
-Hangero — its design, code, name and the sample-closet photos — belongs to
+Outfitkin — its design, code, name and the sample-closet photos — belongs to
 us. You may use the app for your own personal use; you may not copy, resell,
 reverse-engineer or overload it, or access it by automated means.
 
@@ -147,7 +147,7 @@ that does. Where it is reasonable and lawful, we will tell you why.
 
 ## 11. Liability
 
-We work to keep Hangero available and safe, but we provide it **as is** and
+We work to keep Outfitkin available and safe, but we provide it **as is** and
 cannot promise it will always be available, error-free, or that AI output is
 accurate.
 
@@ -159,7 +159,7 @@ liable for indirect or unforeseeable loss.
 ## 12. Changes to these terms
 
 We may update these terms. If a change is significant, we will tell you in the
-app before it takes effect. Continuing to use Hangero after that means you
+app before it takes effect. Continuing to use Outfitkin after that means you
 accept the new terms.
 
 ## 13. Law and disputes

@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy — Outfitkin
 
-**Last updated: 28 October 2026**
+**Last updated: 1 November 2026**
 
 Outfitkin is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
@@ -66,8 +66,8 @@ against the posting rules first, then kept privately and shown only to the
 people who follow you (never to anyone you have blocked or who has blocked
 you) for 24 hours. After that nobody can open it, and it is deleted within
 the following day. Who has viewed your story is shown to you; when you view
-someone else's, they can see that you did. You can delete a story at any
-time.
+someone else's, they can see that you did, along with any emoji you react
+with, which you can take back. You can delete a story at any time.
 
 **Borrowing between friends.** When you ask to borrow a friend's piece, or a
 friend asks to borrow one of yours, we store which piece it is, who asked, the
@@ -210,7 +210,7 @@ following counts, your posts (photo or video, caption, song), whether a post
 is entered in the weekly challenge and, if it wins, its place and number of
 likes, the friends you tag on a post and the posts you are tagged on (only
 people who follow each other can tag each other, and you can take your name
-off any post you are tagged on), comments you write on posts, which posts you repost — a repost shows the post, still
+off any post you are tagged on), comments you write on posts and your replies to other people's comments, which posts you repost — a repost shows the post, still
 credited to its author, to the people who follow you — and the pieces you tag
 on a post: each one's photo, type, colours, brand and pattern, and a general
 name for it such as "t-shirt" or "cap" — never a name you typed yourself,

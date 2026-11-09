@@ -5,7 +5,7 @@ permalink: /terms/
 
 # Terms of Use — Outfitkin
 
-**Last updated: 11 October 2026**
+**Last updated: 9 November 2026**
 
 These terms are the agreement between you and **Chris Leszczynski**, in
 Poland ("we", "us"), who runs Outfitkin.
@@ -118,8 +118,10 @@ it.
 
 ## 8. Subscriptions
 
-Outfitkin is free to use. Some features have monthly limits on the free plan,
-and paid subscriptions raise or remove them.
+Outfitkin is free to use. On the free plan some features have daily or monthly
+limits, and a closet holds up to 100 pieces; paid subscriptions raise or remove
+these limits. The app shows how much you have used before you run out. If a
+limit ever goes down, what you already have stays: only adding more stops.
 
 - **Subscriptions are sold through the Apple App Store** and billed to your
   Apple ID. The price and what it includes are shown before you buy.
@@ -129,7 +131,8 @@ and paid subscriptions raise or remove them.
 - **Cancelling** stops the next renewal; you keep access until the paid period
   ends.
 - **Refunds** are handled by Apple under its policies.
-- Monthly allowances reset at the start of each calendar month and do not roll over.
+- Daily allowances reset each day (UTC) and monthly ones at the start of each
+  calendar month; neither rolls over.
 
 ## 9. Our app
 

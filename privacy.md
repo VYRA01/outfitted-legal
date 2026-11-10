@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy — Outfitkin
 
-**Last updated: 1 November 2026**
+**Last updated: 10 November 2026**
 
 Outfitkin is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
@@ -68,6 +68,16 @@ you) for 24 hours. After that nobody can open it, and it is deleted within
 the following day. Who has viewed your story is shown to you; when you view
 someone else's, they can see that you did, along with any emoji you react
 with, which you can take back. You can delete a story at any time.
+
+**Story highlights.** While a story is still up you can keep it in a highlight
+on your profile, under a name you give it. A kept story stays after its 24
+hours, for as long as you leave it there, and is shown to the same people who
+can see your stories — the people who follow you, never anyone you have blocked
+or who has blocked you — and to nobody else. Views and reactions are not
+recorded for highlights. You can take a story out of a highlight or delete the
+highlight at any time; once no highlight keeps it and its 24 hours are over, it
+is deleted within the following day. Deleting a story also takes it out of
+every highlight.
 
 **Borrowing between friends.** When you ask to borrow a friend's piece, or a
 friend asks to borrow one of yours, we store which piece it is, who asked, the
@@ -228,6 +238,16 @@ piece you have lent to someone, or that they have asked to borrow: they can
 still see that one piece's photo until it is given back, declined or the ask is
 taken back, so they know what to return.
 
+**Only if you open your closet to everyone:** Closet sharing also has an
+"Everyone" setting, which is off unless you choose it and asks you to confirm
+first. Then anyone signed in to Outfitkin, other than people you have blocked
+or who have blocked you, can look through the same pieces friends could see —
+the photo, the type, the colours, the brand and the pattern of pieces whose
+photos passed the check and that you have not kept back. Your notes, prices
+and tags are still never sent to anyone. Only friends can put a look together
+for you or ask to borrow something. Choosing "Friends" or "Only me" closes it
+to everyone else at once.
+
 **Private to you:** your closet, your wishlist, saved outfits, saved posts, how you voted in
 polls (others see only the totals, the poll's author included), calendar plans,
 conversations with Max, saved songs and playlists, and who you have blocked or
@@ -304,7 +324,7 @@ weeks after you picked it.
 photos, outfits, plans, posts, comments, likes, reposts, saved posts, poll
 votes, follows, your wishlist, the record of pieces that have left, looks
 friends made for you, what you have lent, borrowed or asked to borrow, your
-stories and the record of stories you viewed, and conversations with Max. It cannot be undone. Copies in our
+stories, your story highlights and the record of stories you viewed, and conversations with Max. It cannot be undone. Copies in our
 providers' backups, where they exist, are overwritten after a short period.
 
 Sample-closet accounts are temporary. They cannot post, like, comment or

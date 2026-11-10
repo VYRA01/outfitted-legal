@@ -5,7 +5,7 @@ permalink: /terms/
 
 # Terms of Use — Outfitkin
 
-**Last updated: 9 November 2026**
+**Last updated: 10 November 2026**
 
 These terms are the agreement between you and **Chris Leszczynski**, in
 Poland ("we", "us"), who runs Outfitkin.
@@ -68,7 +68,10 @@ through features of the app, and for what the law requires us to keep.
 **Posts are public.** Anything you publish to the feed can be seen by anyone
 using Outfitkin. Your closet, outfits, calendar and conversations with Max are
 private to you unless you turn on closet sharing, which opens your clothes —
-never your notes, prices or tags — to people you follow who follow you back.
+never your notes, prices or tags — to people you follow who follow you back,
+or, only if you choose "Everyone", to anyone signed in to look through.
+Stories are shown to the people who follow you for 24 hours, and for longer
+only if you keep them in a highlight on your profile.
 
 You confirm you have the rights to what you post, including any people in it.
 

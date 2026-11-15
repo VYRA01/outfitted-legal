@@ -5,7 +5,7 @@ permalink: /terms/
 
 # Terms of Use — Outfitkin
 
-**Last updated: 10 November 2026**
+**Last updated: 11 November 2026**
 
 These terms are the agreement between you and **Chris Leszczynski**, in
 Poland ("we", "us"), who runs Outfitkin.
@@ -72,6 +72,12 @@ never your notes, prices or tags — to people you follow who follow you back,
 or, only if you choose "Everyone", to anyone signed in to look through.
 Stories are shown to the people who follow you for 24 hours, and for longer
 only if you keep them in a highlight on your profile.
+
+**Messages are between friends.** You can message people you follow who
+follow you back. The same rules apply to messages as to posts: no harassment,
+threats, spam or sexual content, and nothing about a person that they would
+not want shared. Anyone can report a message they receive, and we may remove
+accounts that break these rules.
 
 You confirm you have the rights to what you post, including any people in it.
 

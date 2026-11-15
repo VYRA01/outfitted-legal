@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy — Outfitkin
 
-**Last updated: 10 November 2026**
+**Last updated: 11 November 2026**
 
 Outfitkin is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
@@ -68,6 +68,34 @@ you) for 24 hours. After that nobody can open it, and it is deleted within
 the following day. Who has viewed your story is shown to you; when you view
 someone else's, they can see that you did, along with any emoji you react
 with, which you can take back. You can delete a story at any time.
+
+**Stickers on stories.** A sticker you put on a story — a poll, "rate my
+outfit", a brand, a song, a piece from your closet — is part of the story and
+shown to the same people. A closet piece is named by what it is (its type,
+colours and brand); its photo and your notes stay in your closet. A song is
+only named: tapping it opens a search for it in the listener's own music app.
+When you answer a poll or rate an outfit on someone's story, your answer is
+stored until the story is deleted. Everyone who can see the story sees a
+poll's totals; only the person who posted it sees a rating's total; nobody
+but you is shown what you answered.
+
+**Messages.** You can write to people you follow who follow you back, and
+nobody else can write to you. A message is the words you type and, if you
+share one, a link to a post; messages cannot carry photos or videos of their
+own. We store each message, who sent it, who it was sent to, when, and
+whether it has been read. Only the two of you can read a conversation, and if
+either of you blocks the other, neither can read it any more. You can delete
+a message you sent, and it is deleted for both of you. We do not read
+messages, show ads in them or use them to train anything. If someone reports
+a message you sent them, we keep a copy of it and of the ten messages before
+it for up to 30 days so we can look at it; the sender is not told who
+reported it.
+
+**Reporting a story.** If you report a story, we keep a copy of it — its
+photo or clip, the stickers on it, who posted it and who reported it — for up
+to 30 days so we can look at it, because the story itself is deleted within a
+day. The person who posted it is not told who reported it. After 30 days the
+report and the copy are deleted.
 
 **Story highlights.** While a story is still up you can keep it in a highlight
 on your profile, under a name you give it. A kept story stays after its 24
@@ -222,9 +250,10 @@ likes, the friends you tag on a post and the posts you are tagged on (only
 people who follow each other can tag each other, and you can take your name
 off any post you are tagged on), comments you write on posts and your replies to other people's comments, which posts you repost — a repost shows the post, still
 credited to its author, to the people who follow you — and the pieces you tag
-on a post: each one's photo, type, colours, brand and pattern, and a general
+on a post: each one's photo, type, colours, brand and pattern, a general
 name for it such as "t-shirt" or "cap" — never a name you typed yourself,
-which stays in your closet.
+which stays in your closet — and, if you pin it, where on the photo it is.
+A post can hold several photos; all of them are public with the post.
 
 **Only if you turn closet sharing on:** your closet stays private unless you
 choose "Friends" in Closet sharing, and friends means people you follow who
@@ -324,7 +353,8 @@ weeks after you picked it.
 photos, outfits, plans, posts, comments, likes, reposts, saved posts, poll
 votes, follows, your wishlist, the record of pieces that have left, looks
 friends made for you, what you have lent, borrowed or asked to borrow, your
-stories, your story highlights and the record of stories you viewed, and conversations with Max. It cannot be undone. Copies in our
+stories, your story highlights and the record of stories you viewed, the
+messages you sent and received, and conversations with Max. It cannot be undone. Copies in our
 providers' backups, where they exist, are overwritten after a short period.
 
 Sample-closet accounts are temporary. They cannot post, like, comment or

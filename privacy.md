@@ -72,8 +72,10 @@ with, which you can take back. You can delete a story at any time.
 **Stickers on stories.** A sticker you put on a story — a poll, "rate my
 outfit", a brand, a song, a piece from your closet — is part of the story and
 shown to the same people. A closet piece is named by what it is (its type,
-colours and brand); its photo and your notes stay in your closet. A song is
+colours and brand); its photo and your notes stay in your closet. A known song is
 only named: tapping it opens a search for it in the listener's own music app.
+A free song on a story plays from where its music library keeps it, as on a
+post (more on music further down).
 When you answer a poll or rate an outfit on someone's story, your answer is
 stored until the story is deleted. Everyone who can see the story sees a
 poll's totals; only the person who posted it sees a rating's total; nobody
@@ -195,7 +197,7 @@ We do **not** sell your data, and we do not use it to train AI models.
 | The same kinds of data, **only when our own Max server is unavailable** | **Anthropic** (Claude API) | The same purposes |
 | Your connection to Max, encrypted end to end so that it cannot read what is sent, and your IP address | **Tailscale**, which relays the connection to our server | To reach Max from anywhere |
 | The words you type to find a known song by name — sent directly from your phone | **Apple** (its public song search) | To find the song, so that it can be named on a post |
-| The words you type to find free music | **Openverse**, the catalogue of openly licensed works run by the WordPress Foundation — asked by our server, not by your phone | To find music that may be played on posts |
+| The words you type to find free music | **Openverse**, the catalogue of openly licensed works run by the WordPress Foundation — asked by our server, not by your phone | To find music that may be played on posts and stories |
 | The words you type into shop search | **Google** (the Custom Search API behind shop results) | To find clothes to buy |
 | Technical details of how finding a face for a camera lens ran — the phone's model and system version, the app's version, how long it took, error codes; never the picture or anything about your face — only when you use a lens | **Google** (ML Kit, the library that finds the face on your phone) | Diagnostics of that library |
 | Subscription payments, once available | **Apple** or **Google**, through the store you buy in | To take payment and manage renewals |
@@ -234,7 +236,7 @@ Weather data comes from MET Norway under the
 [CC BY 4.0 licence](https://api.met.no/doc/License); the app summarises it
 (current conditions and today's range) rather than showing it unchanged.
 
-Music on posts is of two kinds. Free music, which its artists shared under a
+Music on posts and stories is of two kinds. Free music, which its artists shared under a
 Creative Commons licence, is played by the app from where its catalogue keeps
 it (Jamendo, Freesound or Wikimedia Commons), which sees your IP address as
 any website you load a file from does. A known song is only named on a post:

@@ -132,14 +132,17 @@ limits, and a closet holds up to 100 pieces; paid subscriptions raise or remove
 these limits. The app shows how much you have used before you run out. If a
 limit ever goes down, what you already have stays: only adding more stops.
 
-- **Subscriptions are sold through the Apple App Store** and billed to your
-  Apple ID. The price and what it includes are shown before you buy.
+- **Subscriptions are sold through the Apple App Store or Google Play** and
+  billed to your Apple ID or Google account. The price and what it includes
+  are shown before you buy.
 - **They renew automatically** at the end of each period unless you turn
-  auto-renew off at least 24 hours before it ends, in your Apple ID's
-  subscription settings.
+  auto-renew off at least 24 hours before it ends, in your Apple ID's or
+  Google Play's subscription settings.
 - **Cancelling** stops the next renewal; you keep access until the paid period
   ends.
-- **Refunds** are handled by Apple under its policies.
+- **Refunds** are handled by the store you paid through — Apple's App Store or
+  Google Play — under that store's refund policy; we cannot refund a store
+  purchase ourselves.
 - Daily allowances reset each day (UTC) and monthly ones at the start of each
   calendar month; neither rolls over.
 

@@ -97,6 +97,13 @@ to 30 days so we can look at it, because the story itself is deleted within a
 day. The person who posted it is not told who reported it. After 30 days the
 report and the copy are deleted.
 
+**Camera lenses.** When you put a lens on — glasses, a hat — the app finds
+your face in the camera picture to place it, on your phone itself. The
+picture and what is found in it (where your eyes and nose are) never leave
+your phone and are not stored; only a photo you choose to take is kept, as
+any photo is. The library that does this, Google's ML Kit, sends Google
+technical details of how it ran (see the table below), never the picture.
+
 **Story highlights.** While a story is still up you can keep it in a highlight
 on your profile, under a name you give it. A kept story stays after its 24
 hours, for as long as you leave it there, and is shown to the same people who
@@ -132,7 +139,7 @@ played songs.
 upscales, try-ons) you have used this month, and how many times today you have
 used Max's AI features (chat, identifying clothes, outfit ideas and post
 checks), which is how the daily limits are kept. When subscriptions are available,
-payment is handled entirely by Apple — we receive whether your subscription is
+payment is handled entirely by Apple or Google — we receive whether your subscription is
 active, never your card details.
 
 **Technical data.** Our hosting providers keep standard request logs, including
@@ -190,7 +197,8 @@ We do **not** sell your data, and we do not use it to train AI models.
 | The words you type to find a known song by name — sent directly from your phone | **Apple** (its public song search) | To find the song, so that it can be named on a post |
 | The words you type to find free music | **Openverse**, the catalogue of openly licensed works run by the WordPress Foundation — asked by our server, not by your phone | To find music that may be played on posts |
 | The words you type into shop search | **Google** (the Custom Search API behind shop results) | To find clothes to buy |
-| Subscription payments, once available | **Apple** | To take payment and manage renewals |
+| Technical details of how finding a face for a camera lens ran — the phone's model and system version, the app's version, how long it took, error codes; never the picture or anything about your face — only when you use a lens | **Google** (ML Kit, the library that finds the face on your phone) | Diagnostics of that library |
+| Subscription payments, once available | **Apple** or **Google**, through the store you buy in | To take payment and manage renewals |
 | The first five characters of a one-way hash of the password you choose — sent from your phone, never the password itself | **Have I Been Pwned** | To warn you if that password has already appeared in a known data breach |
 | A page address you paste into the board or the wishlist — fetched by your phone, not by us | **That website** | To read the picture the page offers for sharing |
 | Your approximate location (rounded to about 1 km), only when weather is on — sent directly from your phone | **MET Norway**, the Norwegian Meteorological Institute, in the EEA | To get the forecast |
@@ -324,8 +332,8 @@ The sample-closet photos are provided by us.
 
 ## What the app asks permission for
 
-**Camera** — to photograph a garment, take a photo of you for try-on, or record
-a video post.
+**Camera** — to photograph a garment, take a photo of you for try-on, record
+a video post, or take a photo with a filter or lens.
 **Photo library** — to pick photos you already have, and to save a result back.
 **Microphone** — only when recording a video post with sound.
 **Notifications** — optional, to show the outfit you planned for today and to

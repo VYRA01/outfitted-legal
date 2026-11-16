@@ -128,7 +128,7 @@ it.
 ## 8. Subscriptions
 
 Outfitkin is free to use. On the free plan some features have daily or monthly
-limits, and a closet holds up to 100 pieces; paid subscriptions raise or remove
+limits, and a closet holds up to 300 pieces; paid subscriptions raise or remove
 these limits. The app shows how much you have used before you run out. If a
 limit ever goes down, what you already have stays: only adding more stops.
 

@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy — Outfitkin
 
-**Last updated: 11 November 2026**
+**Last updated: 16 November 2026**
 
 Outfitkin is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
@@ -131,7 +131,8 @@ comments, and your conversations with Max, which are kept so a conversation can
 continue.
 
 **What you post.** Photos or videos you publish to the feed are **public** —
-visible to anyone using the app, not only to people who follow you.
+visible to anyone using the app, not only to people who follow you — unless
+you make your account private; then only the followers you accept see them.
 
 **Social activity and music.** Who you follow, likes, reposts, posts you save,
 votes in polls, blocks and reports; songs you like, playlists and recently
@@ -265,6 +266,18 @@ name for it such as "t-shirt" or "cap" — never a name you typed yourself,
 which stays in your closet — and, if you pin it, where on the photo it is.
 A post can hold several photos; all of them are public with the post.
 
+**If you make your account private** (Settings → Private account): your
+username, profile photo, bio, "currently" answers and the number of your
+posts, followers and following stay visible, so that friends can find you.
+Your posts — with their likes, comments, tagged pieces, tags and poll totals —
+are seen only by you and the followers you accept, and they cannot be
+reposted. Following you becomes a request that you accept or decline; the
+person who asked can see that they asked, and you can see who is asking. A
+closet you opened to "Everyone" is then opened to your followers only. Who
+follows whom is not hidden. Turning it off again shows your posts to everyone
+and lets everyone still waiting follow you. This is enforced by the database,
+not only by the app.
+
 **Only if you turn closet sharing on:** your closet stays private unless you
 choose "Friends" in Closet sharing, and friends means people you follow who
 follow you back. Then those people, and only those people, can see the pieces
@@ -279,8 +292,9 @@ taken back, so they know what to return.
 
 **Only if you open your closet to everyone:** Closet sharing also has an
 "Everyone" setting, which is off unless you choose it and asks you to confirm
-first. Then anyone signed in to Outfitkin, other than people you have blocked
-or who have blocked you, can look through the same pieces friends could see —
+first. Then anyone signed in to Outfitkin (with a private account, only your
+followers), other than people you have blocked or who have blocked you, can
+look through the same pieces friends could see —
 the photo, the type, the colours, the brand and the pattern of pieces whose
 photos passed the check and that you have not kept back. Your notes, prices
 and tags are still never sent to anyone. Only friends can put a look together
@@ -367,6 +381,11 @@ stories, your story highlights and the record of stories you viewed, the
 messages you sent and received, and conversations with Max. It cannot be undone. Copies in our
 providers' backups, where they exist, are overwritten after a short period.
 
+**On your phone.** So that your closet opens with no signal — in a shop, say —
+the app keeps the last list of your clothes on the phone, and the closet photos
+it has shown stay in the phone's picture cache. Nobody else can read them
+through the app; signing out removes the list.
+
 Sample-closet accounts are temporary. They cannot post, like, comment or
 follow, and finishing one deletes the account, its rows and its photos there
 and then. One left behind — closed rather than finished — is cleared
@@ -390,7 +409,9 @@ authority.
 
 Outfitkin is not for children under **13**. If you are under **16** and live in
 the EU, you need permission from a parent or guardian. If you believe a child is
-using Outfitkin without that, contact us and we will remove the account.
+using Outfitkin without that, contact us and we will remove the account. Anyone,
+at any age, can make their account private in Settings, so that only the
+followers they accept see their posts.
 
 ## Security
 

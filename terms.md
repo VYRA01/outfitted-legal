@@ -5,7 +5,7 @@ permalink: /terms/
 
 # Terms of Use — Outfitkin
 
-**Last updated: 11 November 2026**
+**Last updated: 16 November 2026**
 
 These terms are the agreement between you and **Chris Leszczynski**, in
 Poland ("we", "us"), who runs Outfitkin.
@@ -65,11 +65,13 @@ thumbnails, and to run Max on your photos. This licence ends when you delete
 the content or your account, except for copies other users already saved
 through features of the app, and for what the law requires us to keep.
 
-**Posts are public.** Anything you publish to the feed can be seen by anyone
-using Outfitkin. Your closet, outfits, calendar and conversations with Max are
+**Posts are public unless your account is private.** Anything you publish to
+the feed can be seen by anyone using Outfitkin — or, if you make your account
+private in Settings, only by the followers you accept. Your closet, outfits, calendar and conversations with Max are
 private to you unless you turn on closet sharing, which opens your clothes —
 never your notes, prices or tags — to people you follow who follow you back,
-or, only if you choose "Everyone", to anyone signed in to look through.
+or, only if you choose "Everyone", to anyone signed in to look through (with a
+private account, only to your followers).
 Stories are shown to the people who follow you for 24 hours, and for longer
 only if you keep them in a highlight on your profile.
 
@@ -128,7 +130,7 @@ it.
 ## 8. Subscriptions
 
 Outfitkin is free to use. On the free plan some features have daily or monthly
-limits, and a closet holds up to 300 pieces; paid subscriptions raise or remove
+limits, and a closet holds up to 500 pieces; paid subscriptions raise or remove
 these limits. The app shows how much you have used before you run out. If a
 limit ever goes down, what you already have stays: only adding more stops.
 

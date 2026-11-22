@@ -18,6 +18,17 @@ This policy works together with the [Terms of Use](terms.md).
 
 ---
 
+
+<section class="glance" aria-label="At a glance">
+<p class="glance-note">At a glance, in the policy's own words. The full policy below is what counts.</p>
+<div class="glance-grid">
+<a class="glance-card" href="#why-we-use-it-legal-bases"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg><b>Not sold</b><span>“We do not sell your data, and we do not use it to train AI models.”</span></a>
+<a class="glance-card" href="#what-we-collect"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12s3.5-6.5 9.5-6.5 9.5 6.5 9.5 6.5-3.5 6.5-9.5 6.5S2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.8"/><path d="M4 20 20 4"/></svg><b>Not tracked</b><span>“We do not collect your precise location, contacts or advertising identifiers, we do not track you across other apps or websites, and the app contains no advertising or analytics SDKs.”</span></a>
+<a class="glance-card" href="#how-long-we-keep-it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9.5 7V4.5h5V7M6.5 7l1 13h9l1-13M10 11v5.5M14 11v5.5"/></svg><b>Yours to delete</b><span>“Delete Account, in your profile, permanently removes your account, clothes, photos, outfits, plans, posts …”</span></a>
+<a class="glance-card" href="#your-rights"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="14" r="4"/><path d="m11 11 8-8M16 6l2.5 2.5M14 8l2 2"/></svg><b>Your rights</b><span>“If you are in the EU or UK, you can ask for a copy of your data, and to correct, delete, restrict or port it, or object to how it is used.”</span></a>
+</div>
+</section>
+
 ## What we collect
 
 **Your account.** An email address and a username. You can change the username

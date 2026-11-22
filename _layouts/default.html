@@ -30,10 +30,14 @@
     <a href="{{ site.baseurl }}/privacy/">Privacy</a>
     <a href="{{ site.baseurl }}/support/">Support</a>
   </nav>
-</div></header>
-<main class="doc"><div class="wrap"><article>
+</div><div class="progress" aria-hidden="true"></div></header>
+<main class="doc"><div class="wrap doc-grid">
+<details class="toc" hidden><summary>On this page</summary><nav aria-label="On this page"></nav></details>
+<article>
 {{ content }}
-</article></div></main>
+</article>
+</div></main>
+<a class="to-top" href="#" aria-label="Back to the top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
 <footer class="foot"><div class="wrap">
   <a class="brand" href="{{ site.baseurl }}/"><svg class="mark" width="26" height="26" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="300" cy="300" r="280.38" stroke-width="39.23" pathLength="1"/><line x1="128" y1="171" x2="463" y2="164" stroke-width="28.85" pathLength="1"/><line x1="128" y1="171" x2="58" y2="233" stroke-width="28.85" pathLength="1"/><line x1="463" y1="164" x2="544" y2="242" stroke-width="28.85" pathLength="1"/><line x1="128" y1="171" x2="482" y2="476" stroke-width="28.85" pathLength="1"/><line x1="463" y1="164" x2="126" y2="483" stroke-width="28.85" pathLength="1"/><line x1="300" y1="321" x2="305" y2="552" stroke-width="28.85" pathLength="1"/></g></svg><b>snapwear</b></a>
   <nav aria-label="Legal">
@@ -44,5 +48,86 @@
   </nav>
   <small>© 2026 Chris Leszczynski · Weather data: MET Norway (CC BY 4.0)</small>
 </div></footer>
+<script>
+/*
+ * The privacy, terms and support pages, inlined into _layouts/default.html by
+ * build-site.mjs. The text itself comes from PRIVACY.md and TERMS.md through
+ * Jekyll; this only helps find your way in it:
+ *   - "On this page": the page's ## headings (kramdown gives each an id), the
+ *     one being read lit, as a column beside the text on a wide screen and a
+ *     list that opens on a phone. Left out on pages with fewer than three.
+ *   - The first "Last updated" line becomes a chip under the title.
+ *   - The seam under the header shows how far down you are; a button takes
+ *     you back up once you are well down.
+ *   - On the support page a link to a question opens it.
+ */
+(() => {
+  const root = document.documentElement;
+  const article = document.querySelector('.doc article');
+  if (!article) return;
+
+  /* The title and its date. */
+  const h1 = article.querySelector('h1');
+  if (h1) {
+    // "Privacy Policy — Snapwear": the brand is already in the header.
+    h1.innerHTML = h1.innerHTML.replace(/\s+—\s+Snapwear\s*$/, '');
+    const dated = [...article.querySelectorAll('p')].find((p) => /^Last updated/.test(p.textContent.trim()));
+    if (dated) dated.classList.add('updated');
+  }
+
+  /* On this page. */
+  const toc = document.querySelector('.toc');
+  const heads = [...article.querySelectorAll('h2[id]')];
+  if (toc && heads.length >= 3) {
+    const nav = toc.querySelector('nav');
+    // A heading that brings its own number (the terms: "1. Who can use …")
+    // keeps it; the others are numbered in order.
+    const parts = heads.map((h, i) => {
+      const own = h.textContent.match(/^(\d+)\.\s*/);
+      return { n: String(own ? own[1] : i + 1).padStart(2, '0'), label: own ? h.textContent.slice(own[0].length) : h.textContent, own };
+    });
+    nav.innerHTML = parts.map(({ n, label }, i) => `<a href="#${heads[i].id}"><i>${n}</i>${label}</a>`).join('');
+    heads.forEach((h, i) => { if (!parts[i].own) h.setAttribute('data-n', parts[i].n); });
+    toc.hidden = false;
+    document.body.classList.add('has-toc');
+    const wide = matchMedia('(min-width: 980px)');
+    const fit = () => { toc.open = wide.matches; };
+    fit();
+    wide.addEventListener('change', fit);
+    // On a phone, choosing a section closes the list again.
+    nav.addEventListener('click', () => { if (!wide.matches) toc.open = false; });
+    const links = [...nav.querySelectorAll('a')];
+    let current = -1;
+    const light = () => {
+      let i = heads.findLastIndex((h) => h.getBoundingClientRect().top < innerHeight * 0.3);
+      if (i < 0) i = 0;
+      if (i === current) return;
+      current = i;
+      links.forEach((a, j) => a.classList.toggle('on', j === i));
+    };
+    addEventListener('scroll', light, { passive: true });
+    light();
+  }
+
+  /* How far down, and back to the top. */
+  const up = document.querySelector('.to-top');
+  const tick = () => {
+    const most = root.scrollHeight - innerHeight;
+    root.style.setProperty('--page', most > 0 ? (scrollY / most).toFixed(4) : '0');
+    if (up) up.classList.toggle('shown', scrollY > innerHeight * 0.8);
+  };
+  addEventListener('scroll', tick, { passive: true });
+  tick();
+  if (up) up.addEventListener('click', (e) => { e.preventDefault(); scrollTo({ top: 0, behavior: 'smooth' }); history.replaceState(null, '', location.pathname); });
+
+  /* Support: a link to a question opens it. */
+  const openHash = () => {
+    const target = location.hash && document.getElementById(location.hash.slice(1));
+    if (target && target.tagName === 'DETAILS') target.open = true;
+  };
+  addEventListener('hashchange', openHash);
+  openHash();
+})();
+</script>
 </body>
 </html>

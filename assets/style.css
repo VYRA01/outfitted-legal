@@ -350,20 +350,6 @@ strong, b { font-weight: 500; }
 .foot .brand b { font-size: 18px; color: var(--ink); }
 .foot small { margin-left: auto; }
 
-/* The privacy, terms and support pages */
-.doc { padding: 56px 0 80px; }
-.doc article { max-width: 720px; margin-inline: auto; }
-.doc h1 { font-size: clamp(34px, 5vw, 52px); margin-bottom: 28px; }
-.doc h2 { font-size: 26px; margin: 44px 0 12px; padding-top: 22px; border-top: 1px solid var(--seam); }
-/* Every section heading already draws a seam; a Markdown --- would double it. */
-.doc hr { display: none; }
-.doc h3 { font-size: 20px; margin: 28px 0 8px; }
-.doc p, .doc li { color: var(--ink-2); }
-.doc strong { color: var(--ink); }
-.doc table { border-collapse: collapse; width: 100%; font-size: 15px; display: block; overflow-x: auto; }
-.doc th, .doc td { border-bottom: 1px solid var(--seam); padding: 10px 12px 10px 0; text-align: left; vertical-align: top; }
-.doc blockquote { margin: 20px 0; padding: 4px 20px; border-left: 2px solid var(--ink); }
-.doc code { font-size: 0.9em; }
 
 @media (max-width: 860px) {
   .hero { padding-top: 40px; }
@@ -570,7 +556,140 @@ h2.thin { font-weight: 200; letter-spacing: 0.02em; }
 
 /* Footer and the legal pages, in the same dark. */
 .foot { border-top-color: var(--seam); }
-.doc h1 { font-weight: 200; letter-spacing: 0.04em; }
-.doc h2 { font-weight: 400; }
-.doc a { color: var(--accent-b); }
-.doc blockquote { border-left-color: var(--accent-a); }
+
+/*
+ * The privacy, terms and support pages: the text from PRIVACY.md and TERMS.md
+ * in the same glass studio. A title card with its date on a glass chip;
+ * "On this page" beside the text on a wide screen (doc.js), numbered
+ * sections, tables on glass, and a button back to the top.
+ */
+.doc { padding: 56px 0 96px; }
+.doc-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 40px; }
+.has-toc .doc-grid { grid-template-columns: 250px minmax(0, 720px); justify-content: center; }
+.doc article { max-width: 720px; width: 100%; margin-inline: auto; min-width: 0; }
+.has-toc .doc article { margin-inline: 0; }
+
+.doc h1 {
+  margin: 8px 0 18px; font-size: clamp(40px, 6vw, 76px); font-weight: 200;
+  letter-spacing: 0.08em; line-height: 1.05;
+}
+.doc p.updated {
+  display: inline-flex; align-items: center; gap: 8px; margin: 0 0 28px;
+  padding: 7px 14px 7px 12px; border-radius: 999px; font-size: 13.5px;
+  background: var(--glass); border: 1px solid var(--glass-edge); color: var(--ink-2);
+}
+.doc p.updated::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px rgba(155, 227, 127, 0.7); }
+.doc p.updated strong { font-weight: 400; color: var(--ink-2); }
+
+.doc h2 {
+  position: relative; scroll-margin-top: 84px;
+  margin: 56px 0 14px; padding-top: 26px; border-top: 1px solid var(--seam);
+  font-size: clamp(24px, 2.6vw, 30px); font-weight: 300;
+}
+.doc h2[data-n]::before {
+  content: attr(data-n); display: block; margin-bottom: 8px;
+  font: 400 12px/1 var(--body); letter-spacing: 0.3em; color: var(--accent-a);
+}
+.doc h3 { font-size: 19px; margin: 28px 0 8px; font-weight: 500; }
+.doc p, .doc li { color: var(--ink-2); }
+.doc strong { color: var(--ink); font-weight: 500; }
+.doc li { margin: 6px 0; }
+.doc li::marker { color: var(--accent-a); }
+.doc a { color: var(--accent-b); text-underline-offset: 3px; }
+.doc hr { display: none; }
+.doc code { font-size: 0.9em; }
+.doc blockquote { margin: 20px 0; padding: 4px 20px; border-left: 2px solid var(--accent-a); }
+.doc table {
+  border-collapse: separate; border-spacing: 0; width: 100%; font-size: 15px; display: block; overflow-x: auto;
+  background: var(--glass); border: 1px solid var(--glass-edge); border-radius: 18px;
+}
+.doc th, .doc td { border-bottom: 1px solid var(--seam); padding: 12px 16px; text-align: left; vertical-align: top; }
+.doc th { color: var(--ink); font-weight: 500; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; }
+.doc tr:last-child td { border-bottom: 0; }
+
+/* On this page: a glass column that stays in view, the section being read lit. */
+.toc { align-self: start; position: sticky; top: 84px; }
+.toc summary { list-style: none; cursor: pointer; font: 400 12px/1 var(--body); letter-spacing: 0.3em; text-transform: uppercase; color: var(--ink-2); padding: 4px 0 14px; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc nav { display: grid; gap: 2px; border-left: 1px solid var(--seam); }
+.toc nav a {
+  position: relative; display: flex; gap: 12px; padding: 7px 0 7px 16px; margin-left: -1px;
+  font-size: 14.5px; line-height: 1.35; color: var(--ink-2); text-decoration: none; border-left: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.toc nav a i { font-style: normal; font-size: 11px; letter-spacing: 0.12em; color: rgba(255, 255, 255, 0.35); padding-top: 3px; }
+.toc nav a:hover { color: var(--ink); }
+.toc nav a.on { color: var(--ink); border-left-color: var(--accent-b); }
+.toc nav a.on::before { content: ''; position: absolute; left: -1px; top: 6px; bottom: 6px; width: 1px; box-shadow: 0 0 10px 1px rgba(95, 227, 224, 0.8); }
+.toc nav a.on i { color: var(--accent-a); }
+
+/* Back to the top. */
+.to-top {
+  position: fixed; right: 20px; bottom: 20px; z-index: 9; width: 46px; height: 46px; border-radius: 50%;
+  display: grid; place-items: center; color: var(--ink);
+  background: rgba(20, 22, 24, 0.7); border: 1px solid var(--glass-edge);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  opacity: 0; translate: 0 10px; pointer-events: none; transition: opacity 0.25s ease, translate 0.25s ease;
+}
+.to-top svg { width: 20px; height: 20px; }
+.to-top.shown { opacity: 1; translate: 0 0; pointer-events: auto; }
+
+/* Privacy at a glance: the policy's own sentences on glass, each a way in. */
+.glance { margin: 36px 0 8px; }
+.glance-note { font-size: 13.5px; margin: 0 0 12px; }
+.glance-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.glance-card {
+  position: relative; display: grid; align-content: start; gap: 8px; padding: 20px; border-radius: 20px; text-decoration: none;
+  background: var(--glass); border: 1px solid var(--glass-edge); color: var(--ink-2) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08); transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.glance-card svg { width: 24px; height: 24px; color: var(--accent-a); }
+.glance-card b { color: var(--ink); font-weight: 500; font-size: 17px; }
+.glance-card span { font-size: 14.5px; line-height: 1.5; }
+.glance-card:hover { border-color: rgba(155, 227, 127, 0.45); transform: translateY(-2px); }
+
+/* Support: a contact card, shortcuts, and the questions as glass rows. */
+.support-hero {
+  position: relative; padding: 40px; border-radius: 28px; margin-bottom: 16px;
+  background: var(--glass); border: 1px solid var(--glass-edge);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 40px 80px -50px rgba(0, 0, 0, 0.9);
+}
+.support-hero::before { content: ''; position: absolute; left: 40px; right: 40px; top: 0; height: 1px; background: var(--accent); }
+.support-hero h1 { margin: 18px 0 12px; }
+.support-hero .lede { margin: 0 0 26px; font-size: 18px; max-width: 46ch; }
+.support-hero .btn { color: #050606; }
+.quick { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin: 0 0 8px; }
+.quick-card {
+  display: grid; align-content: start; gap: 12px; padding: 16px; border-radius: 18px; text-decoration: none; color: var(--ink) !important;
+  background: var(--glass); border: 1px solid var(--glass-edge); font-size: 14.5px; line-height: 1.3;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.quick-card svg { width: 22px; height: 22px; color: var(--accent-a); }
+.quick-card:hover { border-color: rgba(155, 227, 127, 0.45); transform: translateY(-2px); }
+.doc .qa details { scroll-margin-top: 84px; }
+.doc .qa .answer p { margin: 0 0 16px; }
+.doc-links { margin-top: 40px; font-size: 14.5px; }
+
+@media (max-width: 979px) {
+  .has-toc .doc-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .has-toc .doc article { margin-inline: auto; }
+  /* On a phone the contents are a glass list that opens, kept at the top. */
+  .toc {
+    position: sticky; top: 72px; z-index: 5; margin: 0 auto 8px; width: 100%; max-width: 720px;
+    border-radius: 16px; padding: 0 16px; background: rgba(14, 16, 17, 0.82);
+    border: 1px solid var(--glass-edge); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px);
+  }
+  .toc summary { padding: 14px 0; display: flex; justify-content: space-between; }
+  .toc summary::after { content: '+'; font-size: 18px; letter-spacing: 0; line-height: 0.6; color: var(--ink); }
+  .toc[open] summary::after { content: '–'; }
+  .toc nav { max-height: 55vh; overflow: auto; padding-bottom: 12px; border-left: 0; }
+  .toc nav a { padding-left: 0; }
+  .toc nav a.on { border-left-color: transparent; color: var(--accent-b); }
+  .toc nav a.on::before { display: none; }
+}
+@media (max-width: 560px) {
+  .glance-grid { grid-template-columns: 1fr; }
+  .support-hero { padding: 28px 22px; }
+  .support-hero::before { left: 22px; right: 22px; }
+  .to-top { right: 14px; bottom: 14px; }
+}

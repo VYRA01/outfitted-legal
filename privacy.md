@@ -3,11 +3,11 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-# Privacy Policy — Outfitkin
+# Privacy Policy — Snapwear
 
 **Last updated: 16 November 2026**
 
-Outfitkin is a wardrobe app. You photograph clothes you own, it organises them,
+Snapwear is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
 explains what that involves for your data.
 
@@ -177,7 +177,7 @@ contains no advertising or analytics SDKs.
 
 - **To provide the app you signed up for** (contract): storing your closet,
   running Max, showing your posts, planning outfits, managing a subscription.
-- **To keep Outfitkin safe** (legitimate interests): checking photos before they
+- **To keep Snapwear safe** (legitimate interests): checking photos before they
   are published, acting on reports and blocks, preventing abuse, securing the
   service, and the operator's console described under "Who can see what".
 - **Where the law requires it** (legal obligation): for example, responding to
@@ -243,7 +243,7 @@ it (Jamendo, Freesound or Wikimedia Commons), which sees your IP address as
 any website you load a file from does. A known song is only named on a post:
 we store what it is called and who it is by, and nothing else of it. If you
 tap it and choose where to listen, your phone opens Spotify, Apple Music or
-YouTube Music with a search for that name — outside Outfitkin, under that
+YouTube Music with a search for that name — outside Snapwear, under that
 service's own terms and privacy policy. No player of theirs is built into the
 app, and nothing is sent to them unless you open one.
 
@@ -292,7 +292,7 @@ taken back, so they know what to return.
 
 **Only if you open your closet to everyone:** Closet sharing also has an
 "Everyone" setting, which is off unless you choose it and asks you to confirm
-first. Then anyone signed in to Outfitkin (with a private account, only your
+first. Then anyone signed in to Snapwear (with a private account, only your
 followers), other than people you have blocked or who have blocked you, can
 look through the same pieces friends could see —
 the photo, the type, the colours, the brand and the pattern of pieces whose
@@ -325,7 +325,7 @@ this way sits on your board to work from and is left out of anything you post,
 because it belongs to whoever took it.
 
 **Selling a piece** opens Vinted, Vestiaire Collective or Depop in your
-browser, under that site's own privacy policy. Outfitkin lists nothing for you,
+browser, under that site's own privacy policy. Snapwear lists nothing for you,
 sends them nothing about you, and takes no part in the sale.
 
 **Sharing a post** hands a link to its photo or video, and the author's
@@ -333,11 +333,11 @@ username, to the app you pick from your phone's share sheet. What that app
 does with it is under its own privacy policy. The link points at the post, so
 it stops working if the author deletes it.
 
-**We can see it, and there is a record of when.** Running Outfitkin means the
+**We can see it, and there is a record of when.** Running Snapwear means the
 owner can open an operator's console, which is not part of the app. It shows how
 the app is being used: who has an account and when they last signed in, what
 they have posted, how much is in their closet and which brands, which shops they
-have saved links from, and what they have been doing in Outfitkin. It is there to
+have saved links from, and what they have been doing in Snapwear. It is there to
 keep the service running and to act on reports. Only an account on an
 administrator list can open it — the database refuses everyone else, so knowing
 the address is not a way in — and every screen of it writes down who looked, at
@@ -407,9 +407,9 @@ authority.
 
 ## Children
 
-Outfitkin is not for children under **13**. If you are under **16** and live in
+Snapwear is not for children under **13**. If you are under **16** and live in
 the EU, you need permission from a parent or guardian. If you believe a child is
-using Outfitkin without that, contact us and we will remove the account. Anyone,
+using Snapwear without that, contact us and we will remove the account. Anyone,
 at any age, can make their account private in Settings, so that only the
 followers they accept see their posts.
 

@@ -3,23 +3,23 @@ title: Terms of Use
 permalink: /terms/
 ---
 
-# Terms of Use — Outfitkin
+# Terms of Use — Snapwear
 
 **Last updated: 16 November 2026**
 
 These terms are the agreement between you and **Chris Leszczynski**, in
-Poland ("we", "us"), who runs Outfitkin.
+Poland ("we", "us"), who runs Snapwear.
 Contact: **krzysiu.leszcz@outlook.com**.
 
 By creating an account or using the app, you agree to these terms and to the
-[Privacy Policy](privacy.md). If you do not agree, do not use Outfitkin.
+[Privacy Policy](privacy.md). If you do not agree, do not use Snapwear.
 
 ---
 
-## 1. Who can use Outfitkin
+## 1. Who can use Snapwear
 
 You must be at least **13**. If you are under **16** and live in the EU, you
-need permission from a parent or guardian. If you use Outfitkin for someone
+need permission from a parent or guardian. If you use Snapwear for someone
 else, you confirm you are allowed to.
 
 ## 2. Your account
@@ -33,11 +33,11 @@ provide. Sample accounts can be removed at any time.
 
 ## 3. Community rules — zero tolerance
 
-Outfitkin is for sharing clothes. There is **no tolerance** for objectionable
+Snapwear is for sharing clothes. There is **no tolerance** for objectionable
 content or abusive users. You must not post or send anything that breaks these
 rules, which are also shown before every post:
 
-- You must be fully clothed. Outfitkin is about clothes.
+- You must be fully clothed. Snapwear is about clothes.
 - No nudity, sexual content, or anything suggestive.
 - Only post people who agreed to be filmed or photographed.
 - No hate, harassment, threats, or targeting anyone.
@@ -60,13 +60,13 @@ reporting is how you help.
 
 So that the app can work, you give us a worldwide, non-exclusive, royalty-free
 licence to store, process, display and distribute that content **within
-Outfitkin** — for example, to show your public posts to other users, to create
+Snapwear** — for example, to show your public posts to other users, to create
 thumbnails, and to run Max on your photos. This licence ends when you delete
 the content or your account, except for copies other users already saved
 through features of the app, and for what the law requires us to keep.
 
 **Posts are public unless your account is private.** Anything you publish to
-the feed can be seen by anyone using Outfitkin — or, if you make your account
+the feed can be seen by anyone using Snapwear — or, if you make your account
 private in Settings, only by the followers you accept. Your closet, outfits, calendar and conversations with Max are
 private to you unless you turn on closet sharing, which opens your clothes —
 never your notes, prices or tags — to people you follow who follow you back,
@@ -108,7 +108,7 @@ Max, closet sorting, styling suggestions and try-on are powered by AI.
 
 ## 6. Shopping, wishlists and selling
 
-Outfitkin sells nothing. Shop results, wishlist links and the resale sites
+Snapwear sells nothing. Shop results, wishlist links and the resale sites
 under **Sell it** — Vinted, Vestiaire Collective and Depop — are other
 companies' services, opened in your browser and governed by their own terms.
 We are not part of any purchase or sale, take no commission, and cannot help
@@ -124,12 +124,12 @@ measurement of your own clothes and are not advice.
 The music that plays on posts was shared by its artists under Creative Commons
 licences (CC0 or CC BY); the artist and the licence are shown with it. A known
 song on a post is only named. Tapping it opens a music service of your choice,
-outside Outfitkin and under that service's own terms; Outfitkin does not play
+outside Snapwear and under that service's own terms; Snapwear does not play
 it.
 
 ## 8. Subscriptions
 
-Outfitkin is free to use. On the free plan some features have daily or monthly
+Snapwear is free to use. On the free plan some features have daily or monthly
 limits, and a closet holds up to 500 pieces; paid subscriptions raise or remove
 these limits. The app shows how much you have used before you run out. If a
 limit ever goes down, what you already have stays: only adding more stops.
@@ -150,7 +150,7 @@ limit ever goes down, what you already have stays: only adding more stops.
 
 ## 9. Our app
 
-Outfitkin — its design, code, name and the sample-closet photos — belongs to
+Snapwear — its design, code, name and the sample-closet photos — belongs to
 us. You may use the app for your own personal use; you may not copy, resell,
 reverse-engineer or overload it, or access it by automated means.
 
@@ -164,7 +164,7 @@ that does. Where it is reasonable and lawful, we will tell you why.
 
 ## 11. Liability
 
-We work to keep Outfitkin available and safe, but we provide it **as is** and
+We work to keep Snapwear available and safe, but we provide it **as is** and
 cannot promise it will always be available, error-free, or that AI output is
 accurate.
 
@@ -176,7 +176,7 @@ liable for indirect or unforeseeable loss.
 ## 12. Changes to these terms
 
 We may update these terms. If a change is significant, we will tell you in the
-app before it takes effect. Continuing to use Outfitkin after that means you
+app before it takes effect. Continuing to use Snapwear after that means you
 accept the new terms.
 
 ## 13. Law and disputes

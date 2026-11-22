@@ -1,40 +1,29 @@
 /*
- * The website's look, grown from the logo as the app's is: black line on a
- * warm paper ground, two rings, thin seams, the hexagon label. Monochrome;
- * the lens colours are retired. Copied to site/assets/ by build-site.mjs.
+ * Snapwear's website: a dark glass studio, after the Glass Product Render
+ * style of Lemo-Opuscar (github.com/lemomo-ai/lemo-opuscar). The world is
+ * neutral (black, greys, the white of strip lights, chrome); panels are
+ * frosted glass with a thin highlight on top; titles are an ultra-thin
+ * grotesk with very wide tracking and a glint that crosses them when the
+ * hero's sweep light does; one accent, moss green drifting to cyan, is kept
+ * for light only (pulses, progress, the thin line on a panel). Rainbow only
+ * as a hairline at a glass edge, never as a fill. Always dark: it is a
+ * dark-field studio. Copied to site/assets/ by build-site.mjs.
  */
 :root {
-  --paper: #f7f5f0;
-  --paper-2: #efece5;
-  --card: #e9e6df;
-  --ink: #141414;
-  --ink-2: #55524c;
-  --seam: rgba(20, 20, 20, 0.14);
-  --shot: #d9d9d9;
-  --head: 'Bricolage Grotesque', 'Plus Jakarta Sans', system-ui, sans-serif;
-  --body: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
-    --paper: #121211;
-    --paper-2: #1a1a18;
-    --card: #222220;
-    --ink: #f2f0eb;
-    --ink-2: #a9a59d;
-    --seam: rgba(242, 240, 235, 0.16);
-    --shot: #2a2a28;
-    color-scheme: dark;
-  }
-}
-:root[data-theme='dark'] {
-  --paper: #121211;
-  --paper-2: #1a1a18;
-  --card: #222220;
-  --ink: #f2f0eb;
-  --ink-2: #a9a59d;
-  --seam: rgba(242, 240, 235, 0.16);
-  --shot: #2a2a28;
+  --paper: #050606;
+  --paper-2: #0a0c0d;
+  --card: rgba(255, 255, 255, 0.07);
+  --ink: #eef2f1;
+  --ink-2: #9aa3a1;
+  --seam: rgba(255, 255, 255, 0.12);
+  --shot: #1a1c1e;
+  --glass: rgba(255, 255, 255, 0.045);
+  --glass-edge: rgba(255, 255, 255, 0.14);
+  --accent-a: #9be37f;
+  --accent-b: #5fe3e0;
+  --accent: linear-gradient(90deg, var(--accent-a), var(--accent-b));
+  --head: 'Inter Tight', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --body: 'Inter Tight', system-ui, -apple-system, 'Segoe UI', sans-serif;
   color-scheme: dark;
 }
 
@@ -42,14 +31,19 @@
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 72px; }
 body {
   margin: 0;
-  background: var(--paper);
+  /* The studio: black, with a dark-grey sweep high in the middle. */
+  background:
+    radial-gradient(1400px 820px at 50% -8%, #1b1f22 0%, rgba(5, 6, 6, 0) 70%),
+    var(--paper);
   color: var(--ink);
-  font: 17px/1.6 var(--body);
+  font: 300 17.5px/1.6 var(--body);
   -webkit-font-smoothing: antialiased;
 }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
-h1, h2, h3 { font-family: var(--head); line-height: 1.08; letter-spacing: -0.02em; margin: 0; }
+h1, h2, h3 { font-family: var(--head); line-height: 1.08; letter-spacing: -0.015em; margin: 0; font-weight: 300; }
+h3 { font-weight: 500; }
+strong, b { font-weight: 500; }
 
 .wrap { width: min(1120px, 100% - 32px); margin-inline: auto; }
 
@@ -66,7 +60,7 @@ h1, h2, h3 { font-family: var(--head); line-height: 1.08; letter-spacing: -0.02e
 }
 .top .wrap { display: flex; align-items: center; gap: 24px; height: 64px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.brand b { font: 700 22px/1 var(--head); letter-spacing: -0.03em; }
+.brand b { font: 300 15px/1 var(--head); letter-spacing: 0.32em; text-transform: uppercase; }
 .top nav { margin-left: auto; display: flex; gap: 22px; font-size: 15px; }
 .top nav a { text-decoration: none; color: var(--ink-2); }
 .top nav a:hover { color: var(--ink); }
@@ -95,31 +89,50 @@ h1, h2, h3 { font-family: var(--head); line-height: 1.08; letter-spacing: -0.02e
    one hairline thick whatever the tag's width. */
 .tag svg.hex { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
 
-/* Hero */
-.hero { padding: 72px 0 40px; overflow: hidden; }
-.hero .wrap { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
-.hero h1 { font-size: clamp(44px, 7vw, 84px); margin: 18px 0 20px; }
-.hero p.lede { font-size: 20px; color: var(--ink-2); max-width: 32ch; margin: 0 0 32px; }
+/* Hero: the name as a title card beside the live glass render. */
+.hero { padding: 56px 0 48px; overflow: hidden; }
+.hero .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.hero .title {
+  margin: 22px 0 6px; font-size: clamp(46px, 7.6vw, 104px); font-weight: 200;
+  letter-spacing: 0.16em; text-transform: uppercase; line-height: 1; margin-right: -0.16em;
+}
+.hero .kicker { margin: 0 0 26px; font: 400 15px/1 var(--body); letter-spacing: 0.42em; text-transform: uppercase; color: var(--ink-2); }
+.hero p.lede { font-size: 19px; color: var(--ink-2); max-width: 34ch; margin: 0 0 32px; }
 .hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; }
 .hero .note { margin-top: 18px; font-size: 14px; color: var(--ink-2); }
 
-/* A phone, standing in the logo's two rings. */
-.stage { position: relative; display: grid; place-items: center; min-height: 560px; }
-.stage .rings {
-  position: absolute; width: 520px; max-width: 120%; aspect-ratio: 1;
-  border-radius: 50%; border: 2px solid var(--ink);
-  outline: 4px solid var(--ink); outline-offset: 12px;
-  opacity: 0.12;
+/* The glass stage: a still of the scene, then the live render over it. */
+.glass-stage {
+  position: relative; aspect-ratio: 1; width: 100%; max-width: 600px; justify-self: center;
+  border-radius: 50%; overflow: hidden;
+  -webkit-mask: radial-gradient(closest-side, #000 72%, transparent 100%);
+  mask: radial-gradient(closest-side, #000 72%, transparent 100%);
 }
+.glass-stage .poster, .glass-stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.glass-stage canvas { opacity: 0; transition: opacity 0.8s ease; }
+.glass-stage.live canvas { opacity: 1; }
+
+/* A title's glint: a diagonal band of light crossing the letters with the sweep. */
+[data-glint] {
+  background: linear-gradient(105deg, var(--ink) 0%, var(--ink) 40%, #fff 47%, #d9fff4 50%, #fff 53%, var(--ink) 60%, var(--ink) 100%);
+  background-size: 300% 100%; background-position: 100% 0;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+[data-glint].glinting { animation: glint var(--glint-ms, 2200ms) cubic-bezier(0.45, 0, 0.25, 1); }
+@keyframes glint { from { background-position: 100% 0; } to { background-position: 0% 0; } }
+
+/* A phone: black glass with a thin chrome edge. */
 .phone {
   position: relative; width: 270px;
   border-radius: 40px; padding: 8px;
-  /* A phone is black in either theme; the seam keeps it off a dark page. */
-  background: #141414;
-  box-shadow: 0 0 0 1px var(--seam), 0 30px 60px -20px rgba(0, 0, 0, 0.35);
+  background: #0b0c0d;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    0 40px 80px -30px rgba(0, 0, 0, 0.9),
+    0 0 60px -20px rgba(95, 227, 224, 0.12);
 }
 .phone img { border-radius: 32px; background: var(--shot); width: 100%; height: auto; }
-.phone.tilt { rotate: 4deg; }
 
 /* Seam: the thin line that runs through the collar. */
 .seam { border: 0; border-top: 1px solid var(--seam); margin: 0; }
@@ -136,7 +149,7 @@ h1, h2, h3 { font-family: var(--head); line-height: 1.08; letter-spacing: -0.02e
   content: ''; flex: none; width: 9px; height: 9px; border-radius: 50%;
   border: 1.5px solid var(--ink); transform: translateY(-1px);
 }
-.pair { display: flex; justify-content: center; gap: 20px; }
+.pair { display: flex; justify-content: center; align-items: flex-start; gap: 20px; }
 .pair .phone { width: 240px; }
 .pair .phone:nth-child(2) { margin-top: 64px; }
 
@@ -356,8 +369,10 @@ h1, h2, h3 { font-family: var(--head); line-height: 1.08; letter-spacing: -0.02e
   .hero { padding-top: 40px; }
   .hero .wrap, .feature .wrap, .private .wrap { grid-template-columns: 1fr; gap: 40px; }
   .feature.flip .text { order: 0; }
-  .stage { min-height: 0; padding: 30px 0; }
-  .stage .rings { width: 380px; }
+  .glass-stage { max-width: 440px; order: -1; margin-bottom: -20px; }
+  .hero .hero-text { text-align: center; }
+  .hero p.lede { margin-inline: auto; }
+  .hero .ctas { justify-content: center; }
   .phone { width: 230px; }
   .pair .phone { width: 46%; max-width: 220px; }
   .pair .phone:nth-child(2) { margin-top: 40px; }
@@ -410,38 +425,35 @@ h1, h2, h3 { font-family: var(--head); line-height: 1.08; letter-spacing: -0.02e
     rotate 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms);
 }
 .motion .reveal.in { opacity: 1; translate: 0 0; }
-.motion .hero .phone.reveal { translate: 0 60px; rotate: 11deg; }
-.motion .hero .phone.reveal.in { translate: 0 0; rotate: 4deg; }
+.motion .glass-stage.reveal { translate: 0 0; scale: 0.92; transition: opacity 1.4s ease, scale 1.6s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.motion .glass-stage.reveal.in { scale: 1; }
 .motion .pair .phone.reveal { translate: 0 70px; }
 .motion .pair .phone.reveal.in { translate: 0 0; }
 
-/* Leaving the hero (--hp, 0 to 1): the words lift away, the phone
-   straightens out of its tilt and comes forward. */
+/* Leaving the hero (--hp, 0 to 1): the words lift away, the glass comes
+   forward and sinks back into the dark. */
 .motion .hero .wrap > div:first-child {
   opacity: calc(1 - var(--hp, 0) * 0.9);
   transform: translateY(calc(var(--hp, 0) * -70px));
 }
-.motion .hero .stage {
-  transform: translateY(calc(var(--hp, 0) * -40px)) scale(calc(1 + var(--hp, 0) * 0.1));
-  rotate: calc(var(--hp, 0) * -4deg);
+.motion .hero .glass-stage {
+  transform: translateY(calc(var(--hp, 0) * -30px)) scale(calc(1 + var(--hp, 0) * 0.12));
+  opacity: calc(1 - var(--hp, 0) * 0.5);
 }
 
 /* Feature cards lean toward the cursor, with a little light where it is. */
 .motion .card.reveal {
   transform: perspective(800px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
   background:
-    radial-gradient(circle at var(--gx, 50%) var(--gy, 0%), color-mix(in srgb, var(--ink) 6%, transparent), transparent 55%),
-    var(--paper);
+    radial-gradient(circle at var(--gx, 50%) var(--gy, 0%), rgba(255, 255, 255, 0.08), transparent 55%),
+    var(--glass);
   transition:
     opacity 0.7s ease var(--d, 0ms),
     translate 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms),
     transform 0.25s ease-out;
 }
 
-/* The hero's rings open out when the page does, then drift. */
-.motion .hero .rings { animation: rings-open 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
-@keyframes rings-open { from { scale: 0.82; opacity: 0; } }
-.motion .hero .rings,
+/* The second phone of a pair drifts a little slower than the page. */
 .motion .pair .phone:nth-child(2) { transform: translate3d(0, var(--py, 0px), 0); will-change: transform; }
 
 /* The logo drawing itself, line by line (pathLength is 1 on every part). */
@@ -459,3 +471,106 @@ h1, h2, h3 { font-family: var(--head); line-height: 1.08; letter-spacing: -0.02e
   html { scroll-behavior: auto; }
   .btn { transition: none; }
 }
+
+/*
+ * The glass studio, over every part of the page: panels are frosted glass
+ * (the page blurred behind them, a little cool white, a hairline highlight on
+ * top), with the accent as a thin line of light where a panel needs one.
+ */
+.glass, .card, .chat, .qa details, .early .box, .private dl > div, .faq-note {
+  background: var(--glass);
+  border: 1px solid var(--glass-edge);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+  backdrop-filter: blur(18px) saturate(1.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.10), 0 30px 60px -40px rgba(0, 0, 0, 0.9);
+}
+.top { background: rgba(5, 6, 6, 0.6); border-bottom-color: var(--seam); }
+.progress { background: var(--accent); height: 1.5px; box-shadow: 0 0 12px rgba(95, 227, 224, 0.6); }
+
+/* Buttons: a white strip-light pill, and a glass one. */
+.btn { background: var(--ink); color: #050606; border-color: var(--ink); font-weight: 500; letter-spacing: 0.02em; }
+.btn:hover { box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08), 0 0 30px rgba(155, 227, 127, 0.25); }
+.btn.ghost { background: var(--glass); color: var(--ink); border-color: var(--glass-edge); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+.tag { font-weight: 500; letter-spacing: 0.28em; color: var(--ink-2); }
+
+/* Section titles: light and calm; the thin ones are title cards. */
+.feature h2, .ask h2, .how h2, .gallery-head h2, .more h2, .private h2, .faq h2, .early h2, .ipad-head h2, .film h2 { font-weight: 300; letter-spacing: -0.01em; }
+h2.thin { font-weight: 200; letter-spacing: 0.02em; }
+.words { font-weight: 200; letter-spacing: -0.02em; }
+
+/* Sections that used a lighter ground now sit in the same studio. */
+.more, .ask, .gallery { background: transparent; }
+.more, .ask { position: relative; }
+.more::before, .ask::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(900px 500px at 50% 0%, rgba(255, 255, 255, 0.035), transparent 70%);
+}
+.feature li::before { border-color: transparent; background: var(--accent); box-shadow: 0 0 10px rgba(155, 227, 127, 0.5); width: 7px; height: 7px; }
+
+/* Cards: frosted, with the accent line on top when the cursor is on them. */
+.card { border-radius: 22px; position: relative; overflow: hidden; }
+.card::after { content: ''; position: absolute; left: 22px; right: 22px; top: 0; height: 1px; background: var(--accent); opacity: 0; transition: opacity 0.3s ease; }
+.card:hover::after { opacity: 0.9; }
+.card svg { color: var(--accent-a); }
+
+/* The chat: a slab of frosted glass, Max's words on smoked glass. */
+.chat { border-radius: 28px; }
+.chat-head { border-bottom-color: var(--seam); }
+.msg.me { background: var(--ink); color: #050606; }
+.msg.max { background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.08); }
+.chat-input { border-color: var(--glass-edge); }
+.send { background: var(--ink); }
+.send::after { border-color: #050606; }
+
+/* How it works: the line fills with light, the current step in two rings. */
+.steps::after { background: var(--accent); box-shadow: 0 0 10px rgba(155, 227, 127, 0.5); }
+.step .node { background: var(--paper); border-color: rgba(255, 255, 255, 0.5); }
+.how.pinned .step.done .node { background: var(--accent-a); border-color: var(--accent-a); }
+.how.pinned .step.on .node { background: var(--ink); box-shadow: 0 0 0 4px var(--paper), 0 0 0 5.5px var(--accent-b), 0 0 18px rgba(95, 227, 224, 0.6); }
+
+/* Ribbon: hollow letters are glass edges, with the faintest rainbow. */
+.ribbon { border-color: var(--seam); }
+.ribbon-track span { font-weight: 200; letter-spacing: 0.02em; }
+.ribbon-track .hollow { -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6); text-shadow: -0.5px 0 rgba(255, 80, 120, 0.1), 0.5px 0 rgba(80, 200, 255, 0.12); }
+
+/* Privacy: each promise its own glass slab. */
+.private dl { gap: 12px; }
+.private dl > div, .private dl > div:last-child { border-radius: 18px; padding: 20px 22px; border-bottom: 1px solid var(--glass-edge); }
+.private dt { font-weight: 500; }
+
+/* FAQ: glass rows. */
+.qa { display: grid; gap: 10px; }
+.qa details, .qa details:last-child { border-radius: 18px; padding: 0 20px; border-bottom: 1px solid var(--glass-edge); }
+.qa summary { font-weight: 400; }
+.qa .plus { border-color: rgba(255, 255, 255, 0.5); }
+.qa .plus::before, .qa .plus::after { background: var(--ink); }
+.qa details[open] { box-shadow: inset 0 1px 0 rgba(155, 227, 127, 0.5), 0 30px 60px -40px rgba(0, 0, 0, 0.9); }
+
+/* The invite: a lit glass box. */
+.early .box { color: var(--ink); border-radius: 32px; }
+.early .box::before { content: ''; position: absolute; left: 40px; right: 40px; top: 0; height: 1px; background: var(--accent); }
+.early .box .mark { color: var(--ink); opacity: 0.08; }
+.early p { color: var(--ink-2); }
+.early .btn { background: var(--ink); color: #050606; border-color: var(--ink); }
+
+/* The film: a tall frame of glass. */
+.film { padding: 40px 0 96px; }
+.film .wrap { display: grid; grid-template-columns: 1fr auto; gap: 64px; align-items: center; }
+.film h2 { font-size: clamp(32px, 4.4vw, 52px); margin: 16px 0 18px; }
+.film p { color: var(--ink-2); max-width: 40ch; margin: 0; }
+.film-frame {
+  width: min(340px, 80vw); aspect-ratio: 9 / 16; border-radius: 28px; overflow: hidden; padding: 8px;
+  background: #0b0c0d; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 50px 90px -40px rgba(0, 0, 0, 0.95), 0 0 80px -30px rgba(95, 227, 224, 0.25);
+}
+.film-frame video { width: 100%; height: 100%; object-fit: cover; border-radius: 21px; background: #000; display: block; }
+@media (max-width: 860px) {
+  .film .wrap { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  .film p { margin-inline: auto; }
+}
+
+/* Footer and the legal pages, in the same dark. */
+.foot { border-top-color: var(--seam); }
+.doc h1 { font-weight: 200; letter-spacing: 0.04em; }
+.doc h2 { font-weight: 400; }
+.doc a { color: var(--accent-b); }
+.doc blockquote { border-left-color: var(--accent-a); }

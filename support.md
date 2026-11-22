@@ -3,7 +3,7 @@ title: Support
 permalink: /support/
 ---
 
-# Support — Outfitkin
+# Support — Snapwear
 
 Something not working, a question, or a request about your data? Email
 **krzysiu.leszcz@outlook.com** and we will get back to you.

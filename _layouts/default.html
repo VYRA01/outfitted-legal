@@ -9,7 +9,7 @@
 <meta name="color-scheme" content="dark">
 <meta property="og:title" content="{{ page.title }} — Snapwear">
 <meta property="og:description" content="{{ site.description }}">
-<meta property="og:image" content="https://vyra01.github.io/outfitted-legal/assets/hero-poster.jpg">
+<meta property="og:image" content="https://vyra01.github.io/outfitted-legal/assets/hero-poster.jpg?v=bd96ababfe">
 <meta property="og:image:alt" content="Snapwear: your closet, styled by AI">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css?v=8142c302b5">
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -127,6 +127,96 @@
   };
   addEventListener('hashchange', openHash);
   openHash();
+})();
+/*
+ * Every email link on the site, inlined into index.html and the layout by
+ * build-site.mjs. A plain mailto: link only works where a mail app is set
+ * up; for anyone who reads their email in a browser (Outlook or Gmail on the
+ * web) it does nothing, and the button looks broken. So a click opens a small
+ * glass panel instead: copy the address, write in Gmail or Outlook on the
+ * web (their own compose pages, address and subject filled in), or open the
+ * mail app after all. Without this script the links still work as mailto.
+ */
+(() => {
+  const links = [...document.querySelectorAll('a[href^="mailto:"]')];
+  if (!links.length) return;
+
+  const panel = document.createElement('div');
+  panel.className = 'contact-panel';
+  panel.setAttribute('role', 'dialog');
+  panel.setAttribute('aria-modal', 'false');
+  panel.setAttribute('aria-label', 'Email us');
+  panel.hidden = true;
+  document.body.append(panel);
+
+  let opener = null;
+  const close = () => {
+    if (panel.hidden) return;
+    panel.hidden = true;
+    if (opener) opener.focus();
+    opener = null;
+  };
+
+  function open(link) {
+    const mail = new URL(link.href);
+    const to = decodeURIComponent(mail.pathname);
+    const subject = mail.searchParams.get('subject') || '';
+    const q = (o) => new URLSearchParams(o).toString();
+    const gmail = `https://mail.google.com/mail/?${q({ view: 'cm', fs: '1', to, su: subject })}`;
+    const outlook = `https://outlook.live.com/mail/0/deeplink/compose?${q({ to, subject })}`;
+    panel.innerHTML = `
+      <p class="contact-to">${to}</p>
+      <button type="button" class="contact-copy">Copy address</button>
+      <a href="${gmail}" target="_blank" rel="noopener">Write in Gmail</a>
+      <a href="${outlook}" target="_blank" rel="noopener">Write in Outlook</a>
+      <a href="${link.href}" class="contact-app">Open my mail app</a>`;
+    const copy = panel.querySelector('.contact-copy');
+    copy.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(to);
+      } catch {
+        // No clipboard (an old browser, or not https): select the address to copy by hand.
+        const range = document.createRange();
+        range.selectNodeContents(panel.querySelector('.contact-to'));
+        getSelection().removeAllRanges();
+        getSelection().addRange(range);
+      }
+      copy.textContent = 'Copied';
+      copy.classList.add('done');
+    });
+    panel.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setTimeout(close, 0)));
+
+    // Beside the button on a wide screen; a sheet along the bottom on a phone.
+    panel.hidden = false;
+    const wide = innerWidth > 600;
+    panel.classList.toggle('sheet', !wide);
+    if (wide) {
+      const r = link.getBoundingClientRect();
+      const w = panel.offsetWidth, h = panel.offsetHeight;
+      const left = Math.min(Math.max(12, r.left), innerWidth - w - 12);
+      const below = r.bottom + 10 + h < innerHeight;
+      panel.style.left = `${left}px`;
+      panel.style.top = `${below ? r.bottom + 10 : Math.max(12, r.top - h - 10)}px`;
+    } else {
+      panel.style.left = panel.style.top = '';
+    }
+    opener = link;
+    copy.focus();
+  }
+
+  for (const link of links) {
+    link.addEventListener('click', (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey) return; // a modified click keeps its own meaning
+      e.preventDefault();
+      if (!panel.hidden && opener === link) close();
+      else open(link);
+    });
+  }
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+  document.addEventListener('click', (e) => {
+    if (!panel.hidden && !panel.contains(e.target) && !links.includes(e.target.closest('a'))) close();
+  });
+  addEventListener('scroll', () => { if (!panel.classList.contains('sheet')) close(); }, { passive: true });
 })();
 </script>
 </body>

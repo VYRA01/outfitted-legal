@@ -4,23 +4,23 @@
  * neutral (black, greys, the white of strip lights, chrome); panels are
  * frosted glass with a thin highlight on top; titles are an ultra-thin
  * grotesk with very wide tracking and a glint that crosses them when the
- * hero's sweep light does; one accent, moss green drifting to cyan, is kept
+ * hero's sweep light does; one accent, amber drifting to rose, is kept
  * for light only (pulses, progress, the thin line on a panel). Rainbow only
  * as a hairline at a glass edge, never as a fill. Always dark: it is a
  * dark-field studio. Copied to site/assets/ by build-site.mjs.
  */
 :root {
-  --paper: #050606;
-  --paper-2: #0a0c0d;
+  --paper: #070505;
+  --paper-2: #0d0a09;
   --card: rgba(255, 255, 255, 0.07);
-  --ink: #eef2f1;
-  --ink-2: #9aa3a1;
+  --ink: #f4eee6;
+  --ink-2: #aaa198;
   --seam: rgba(255, 255, 255, 0.12);
   --shot: #1a1c1e;
-  --glass: rgba(255, 255, 255, 0.045);
-  --glass-edge: rgba(255, 255, 255, 0.14);
-  --accent-a: #9be37f;
-  --accent-b: #5fe3e0;
+  --glass: rgba(255, 214, 180, 0.05);
+  --glass-edge: rgba(255, 214, 180, 0.16);
+  --accent-a: #ffb45c;
+  --accent-b: #ff6f91;
   --accent: linear-gradient(90deg, var(--accent-a), var(--accent-b));
   --head: 'Inter Tight', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --body: 'Inter Tight', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -33,7 +33,8 @@ body {
   margin: 0;
   /* The studio: black, with a dark-grey sweep high in the middle. */
   background:
-    radial-gradient(1400px 820px at 50% -8%, #1b1f22 0%, rgba(5, 6, 6, 0) 70%),
+    radial-gradient(1100px 620px at 50% -10%, rgba(255, 140, 90, 0.16) 0%, rgba(255, 111, 145, 0.06) 40%, rgba(7, 5, 5, 0) 72%),
+    radial-gradient(1400px 820px at 50% -8%, #241b18 0%, rgba(7, 5, 5, 0) 70%),
     var(--paper);
   color: var(--ink);
   font: 300 17.5px/1.6 var(--body);
@@ -114,7 +115,7 @@ strong, b { font-weight: 500; }
 
 /* A title's glint: a diagonal band of light crossing the letters with the sweep. */
 [data-glint] {
-  background: linear-gradient(105deg, var(--ink) 0%, var(--ink) 40%, #fff 47%, #d9fff4 50%, #fff 53%, var(--ink) 60%, var(--ink) 100%);
+  background: linear-gradient(105deg, var(--ink) 0%, var(--ink) 40%, #fff 47%, #fff0dc 50%, #fff 53%, var(--ink) 60%, var(--ink) 100%);
   background-size: 300% 100%; background-position: 100% 0;
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
@@ -130,7 +131,7 @@ strong, b { font-weight: 500; }
     0 0 0 1px rgba(255, 255, 255, 0.22),
     inset 0 1px 0 rgba(255, 255, 255, 0.25),
     0 40px 80px -30px rgba(0, 0, 0, 0.9),
-    0 0 60px -20px rgba(95, 227, 224, 0.12);
+    0 0 60px -20px rgba(255, 111, 145, 0.12);
 }
 .phone img { border-radius: 32px; background: var(--shot); width: 100%; height: auto; }
 
@@ -471,11 +472,11 @@ strong, b { font-weight: 500; }
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.10), 0 30px 60px -40px rgba(0, 0, 0, 0.9);
 }
 .top { background: rgba(5, 6, 6, 0.6); border-bottom-color: var(--seam); }
-.progress { background: var(--accent); height: 1.5px; box-shadow: 0 0 12px rgba(95, 227, 224, 0.6); }
+.progress { background: var(--accent); height: 1.5px; box-shadow: 0 0 12px rgba(255, 111, 145, 0.6); }
 
 /* Buttons: a white strip-light pill, and a glass one. */
 .btn { background: var(--ink); color: #050606; border-color: var(--ink); font-weight: 500; letter-spacing: 0.02em; }
-.btn:hover { box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08), 0 0 30px rgba(155, 227, 127, 0.25); }
+.btn:hover { box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08), 0 0 30px rgba(255, 180, 92, 0.25); }
 .btn.ghost { background: var(--glass); color: var(--ink); border-color: var(--glass-edge); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
 .tag { font-weight: 500; letter-spacing: 0.28em; color: var(--ink-2); }
 
@@ -491,7 +492,7 @@ h2.thin { font-weight: 200; letter-spacing: 0.02em; }
   content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
   background: radial-gradient(900px 500px at 50% 0%, rgba(255, 255, 255, 0.035), transparent 70%);
 }
-.feature li::before { border-color: transparent; background: var(--accent); box-shadow: 0 0 10px rgba(155, 227, 127, 0.5); width: 7px; height: 7px; }
+.feature li::before { border-color: transparent; background: var(--accent); box-shadow: 0 0 10px rgba(255, 180, 92, 0.5); width: 7px; height: 7px; }
 
 /* Cards: frosted, with the accent line on top when the cursor is on them. */
 .card { border-radius: 22px; position: relative; overflow: hidden; }
@@ -509,15 +510,15 @@ h2.thin { font-weight: 200; letter-spacing: 0.02em; }
 .send::after { border-color: #050606; }
 
 /* How it works: the line fills with light, the current step in two rings. */
-.steps::after { background: var(--accent); box-shadow: 0 0 10px rgba(155, 227, 127, 0.5); }
+.steps::after { background: var(--accent); box-shadow: 0 0 10px rgba(255, 180, 92, 0.5); }
 .step .node { background: var(--paper); border-color: rgba(255, 255, 255, 0.5); }
 .how.pinned .step.done .node { background: var(--accent-a); border-color: var(--accent-a); }
-.how.pinned .step.on .node { background: var(--ink); box-shadow: 0 0 0 4px var(--paper), 0 0 0 5.5px var(--accent-b), 0 0 18px rgba(95, 227, 224, 0.6); }
+.how.pinned .step.on .node { background: var(--ink); box-shadow: 0 0 0 4px var(--paper), 0 0 0 5.5px var(--accent-b), 0 0 18px rgba(255, 111, 145, 0.6); }
 
 /* Ribbon: hollow letters are glass edges, with the faintest rainbow. */
 .ribbon { border-color: var(--seam); }
 .ribbon-track span { font-weight: 200; letter-spacing: 0.02em; }
-.ribbon-track .hollow { -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6); text-shadow: -0.5px 0 rgba(255, 80, 120, 0.1), 0.5px 0 rgba(80, 200, 255, 0.12); }
+.ribbon-track .hollow { -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6); text-shadow: -0.5px 0 rgba(255, 80, 120, 0.1), 0.5px 0 rgba(255, 190, 120, 0.12); }
 
 /* Privacy: each promise its own glass slab. */
 .private dl { gap: 12px; }
@@ -530,7 +531,7 @@ h2.thin { font-weight: 200; letter-spacing: 0.02em; }
 .qa summary { font-weight: 400; }
 .qa .plus { border-color: rgba(255, 255, 255, 0.5); }
 .qa .plus::before, .qa .plus::after { background: var(--ink); }
-.qa details[open] { box-shadow: inset 0 1px 0 rgba(155, 227, 127, 0.5), 0 30px 60px -40px rgba(0, 0, 0, 0.9); }
+.qa details[open] { box-shadow: inset 0 1px 0 rgba(255, 180, 92, 0.5), 0 30px 60px -40px rgba(0, 0, 0, 0.9); }
 
 /* The invite: a lit glass box. */
 .early .box { color: var(--ink); border-radius: 32px; }
@@ -546,7 +547,7 @@ h2.thin { font-weight: 200; letter-spacing: 0.02em; }
 .film p { color: var(--ink-2); max-width: 40ch; margin: 0; }
 .film-frame {
   width: min(340px, 80vw); aspect-ratio: 9 / 16; border-radius: 28px; overflow: hidden; padding: 8px;
-  background: #0b0c0d; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 50px 90px -40px rgba(0, 0, 0, 0.95), 0 0 80px -30px rgba(95, 227, 224, 0.25);
+  background: #0b0c0d; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 50px 90px -40px rgba(0, 0, 0, 0.95), 0 0 80px -30px rgba(255, 111, 145, 0.25);
 }
 .film-frame video { width: 100%; height: 100%; object-fit: cover; border-radius: 21px; background: #000; display: block; }
 @media (max-width: 860px) {
@@ -578,7 +579,7 @@ h2.thin { font-weight: 200; letter-spacing: 0.02em; }
   padding: 7px 14px 7px 12px; border-radius: 999px; font-size: 13.5px;
   background: var(--glass); border: 1px solid var(--glass-edge); color: var(--ink-2);
 }
-.doc p.updated::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px rgba(155, 227, 127, 0.7); }
+.doc p.updated::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px rgba(255, 180, 92, 0.7); }
 .doc p.updated strong { font-weight: 400; color: var(--ink-2); }
 
 .doc h2 {
@@ -620,7 +621,7 @@ h2.thin { font-weight: 200; letter-spacing: 0.02em; }
 .toc nav a i { font-style: normal; font-size: 11px; letter-spacing: 0.12em; color: rgba(255, 255, 255, 0.35); padding-top: 3px; }
 .toc nav a:hover { color: var(--ink); }
 .toc nav a.on { color: var(--ink); border-left-color: var(--accent-b); }
-.toc nav a.on::before { content: ''; position: absolute; left: -1px; top: 6px; bottom: 6px; width: 1px; box-shadow: 0 0 10px 1px rgba(95, 227, 224, 0.8); }
+.toc nav a.on::before { content: ''; position: absolute; left: -1px; top: 6px; bottom: 6px; width: 1px; box-shadow: 0 0 10px 1px rgba(255, 111, 145, 0.8); }
 .toc nav a.on i { color: var(--accent-a); }
 
 /* Back to the top. */
@@ -646,7 +647,7 @@ h2.thin { font-weight: 200; letter-spacing: 0.02em; }
 .glance-card svg { width: 24px; height: 24px; color: var(--accent-a); }
 .glance-card b { color: var(--ink); font-weight: 500; font-size: 17px; }
 .glance-card span { font-size: 14.5px; line-height: 1.5; }
-.glance-card:hover { border-color: rgba(155, 227, 127, 0.45); transform: translateY(-2px); }
+.glance-card:hover { border-color: rgba(255, 180, 92, 0.45); transform: translateY(-2px); }
 
 /* Support: a contact card, shortcuts, and the questions as glass rows. */
 .support-hero {
@@ -665,7 +666,7 @@ h2.thin { font-weight: 200; letter-spacing: 0.02em; }
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 .quick-card svg { width: 22px; height: 22px; color: var(--accent-a); }
-.quick-card:hover { border-color: rgba(155, 227, 127, 0.45); transform: translateY(-2px); }
+.quick-card:hover { border-color: rgba(255, 180, 92, 0.45); transform: translateY(-2px); }
 .doc .qa details { scroll-margin-top: 84px; }
 .doc .qa .answer p { margin: 0 0 16px; }
 .doc-links { margin-top: 40px; font-size: 14.5px; }
@@ -693,3 +694,53 @@ h2.thin { font-weight: 200; letter-spacing: 0.02em; }
   .support-hero::before { left: 22px; right: 22px; }
   .to-top { right: 14px; bottom: 14px; }
 }
+
+/* The email panel (contact.js): copy the address, or write in Gmail or Outlook
+   on the web, for anyone without a mail app set up. */
+.contact-panel {
+  position: fixed; z-index: 30; width: 260px; padding: 14px; border-radius: 18px;
+  display: grid; gap: 6px;
+  background: rgba(20, 17, 16, 0.92); border: 1px solid var(--glass-edge);
+  -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 30px 60px -20px rgba(0, 0, 0, 0.9);
+}
+.contact-panel[hidden] { display: none; }
+.contact-panel::before { content: ''; position: absolute; left: 18px; right: 18px; top: 0; height: 1px; background: var(--accent); }
+.contact-to { margin: 2px 4px 8px; font-size: 14px; color: var(--ink-2); word-break: break-all; user-select: all; }
+.contact-panel button, .contact-panel a {
+  display: block; width: 100%; padding: 11px 14px; border-radius: 12px; text-align: left;
+  font: 400 15px/1.2 var(--body); color: var(--ink); text-decoration: none; cursor: pointer;
+  background: rgba(255, 255, 255, 0.05); border: 1px solid transparent;
+}
+.contact-panel button:hover, .contact-panel a:hover, .contact-panel button:focus-visible, .contact-panel a:focus-visible {
+  border-color: rgba(255, 180, 92, 0.5); outline: none;
+}
+.contact-panel .contact-copy { background: var(--ink); color: #0b0908; font-weight: 500; }
+.contact-panel .contact-copy.done { background: var(--accent-a); }
+.contact-panel.sheet { left: 12px !important; right: 12px; bottom: 12px; top: auto !important; width: auto; }
+
+/* The chat demo's box replays the conversation when tapped. */
+.motion .chat-input { cursor: pointer; }
+.motion .chat-input:hover { border-color: rgba(255, 180, 92, 0.45); }
+
+/*
+ * Warmth you can see (25 November): the studio is warmed, not only its thin
+ * lines -- an amber halo behind the glass hero, a warm glow over the sections
+ * that had a lighter ground, and the small labels lit amber.
+ */
+.glass-stage::before {
+  content: ''; position: absolute; inset: 8%; border-radius: 50%; z-index: 0; pointer-events: none;
+  background: radial-gradient(closest-side, rgba(255, 150, 90, 0.28), rgba(255, 111, 145, 0.10) 55%, transparent 75%);
+  filter: blur(18px);
+}
+.glass-stage .poster, .glass-stage canvas { z-index: 1; mix-blend-mode: screen; }
+.more::before, .ask::before {
+  background: radial-gradient(900px 500px at 50% 0%, rgba(255, 150, 90, 0.10), rgba(255, 111, 145, 0.04) 45%, transparent 72%);
+}
+.tag { color: var(--accent-a); }
+.tag svg.hex path { stroke: rgba(255, 180, 92, 0.75); }
+.hero .kicker { color: var(--accent-a); }
+.step h3, .glance-card b { color: var(--ink); }
+.btn.ghost { border-color: rgba(255, 180, 92, 0.35); }
+.btn.ghost:hover { border-color: var(--accent-a); }
+.top { background: rgba(10, 7, 6, 0.62); }

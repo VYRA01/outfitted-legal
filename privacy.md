@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy — Snapwear
 
-**Last updated: 16 November 2026**
+**Last updated: 25 November 2026**
 
 Snapwear is a wardrobe app. You photograph clothes you own, it organises them,
 and an assistant called Max suggests outfits and shows you wearing them. This
@@ -24,7 +24,7 @@ This policy works together with the [Terms of Use](terms.md).
 <div class="glance-grid">
 <a class="glance-card" href="#why-we-use-it-legal-bases"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg><b>Not sold</b><span>“We do not sell your data, and we do not use it to train AI models.”</span></a>
 <a class="glance-card" href="#what-we-collect"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12s3.5-6.5 9.5-6.5 9.5 6.5 9.5 6.5-3.5 6.5-9.5 6.5S2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.8"/><path d="M4 20 20 4"/></svg><b>Not tracked</b><span>“We do not collect your precise location, contacts or advertising identifiers, we do not track you across other apps or websites, and the app contains no advertising or analytics SDKs.”</span></a>
-<a class="glance-card" href="#how-long-we-keep-it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9.5 7V4.5h5V7M6.5 7l1 13h9l1-13M10 11v5.5M14 11v5.5"/></svg><b>Yours to delete</b><span>“Delete Account, in your profile, permanently removes your account, clothes, photos, outfits, plans, posts …”</span></a>
+<a class="glance-card" href="#how-long-we-keep-it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9.5 7V4.5h5V7M6.5 7l1 13h9l1-13M10 11v5.5M14 11v5.5"/></svg><b>Yours to delete</b><span>“Delete account, in Settings → Your data (and at the foot of your profile), permanently removes your account, clothes, photos, outfits, plans, posts …”</span></a>
 <a class="glance-card" href="#your-rights"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="14" r="4"/><path d="m11 11 8-8M16 6l2.5 2.5M14 8l2 2"/></svg><b>Your rights</b><span>“If you are in the EU or UK, you can ask for a copy of your data, and to correct, delete, restrict or port it, or object to how it is used.”</span></a>
 </div>
 </section>
@@ -197,6 +197,10 @@ contains no advertising or analytics SDKs.
   your town on a post when you ask for that. You give it by allowing location
   when you turn weather on or press "use where I am", and you can withdraw it
   at any time in your phone's settings.
+- **Your consent, again**: sending a request to the backup AI, Anthropic's
+  Claude, when our own Max server is not answering. The app asks before the
+  first time, and you can withdraw it at any time in **Settings → Privacy and
+  safety → Backup AI**; until you agree, nothing is sent to Anthropic.
 
 We do **not** sell your data, and we do not use it to train AI models.
 
@@ -206,7 +210,7 @@ We do **not** sell your data, and we do not use it to train AI models.
 |---|---|---|
 | Everything you store in the app | **Supabase** — database, sign-in and file storage, hosted in the EU | To run the service |
 | Garment photos, photos of you for try-on, messages to Max with a summary of your wardrobe, photos you try to publish | **Max, on servers we operate** | To recognise clothes, answer you, create try-on images and check photos against the rules |
-| The same kinds of data, **only when our own Max server is unavailable** | **Anthropic** (Claude API) | The same purposes |
+| The same kinds of data, **only when our own Max server is unavailable and you have allowed the backup AI** (the app asks first; Settings → Privacy and safety) | **Anthropic** (Claude API), in the USA | The same purposes. Under its commercial terms, Anthropic does not train its models on what is sent this way |
 | Your connection to Max, encrypted end to end so that it cannot read what is sent, and your IP address | **Tailscale**, which relays the connection to our server | To reach Max from anywhere |
 | The words you type to find a known song by name — sent directly from your phone | **Apple** (its public song search) | To find the song, so that it can be named on a post |
 | The words you type to find free music | **Openverse**, the catalogue of openly licensed works run by the WordPress Foundation — asked by our server, not by your phone | To find music that may be played on posts and stories |
@@ -265,7 +269,10 @@ takes you to that shop, under its own privacy policy.
 
 ## Who can see what
 
-**Public:** your username, profile photo, bio, "currently" answers, follower and
+**Public** — to anyone signed in to Snapwear. Without an account none of this
+can be looked up, though a photo or video in it opens for anyone who has its
+link (see "Sharing a post" below): your username, profile photo, your banner and
+moving profile photo, the colour and font you chose for your profile, bio, "currently" answers, follower and
 following counts, your posts (photo or video, caption, song), whether a post
 is entered in the weekly challenge and, if it wins, its place and number of
 likes, the friends you tag on a post and the posts you are tagged on (only
@@ -384,7 +391,7 @@ goes up; if it never does — you changed the photo, started over, or it was
 turned down — it is deleted, at once where the app can tell and otherwise two
 weeks after you picked it.
 
-**Delete Account**, in your profile, permanently removes your account, clothes,
+**Delete account**, in Settings → Your data (and at the foot of your profile), permanently removes your account, clothes,
 photos, outfits, plans, posts, comments, likes, reposts, saved posts, poll
 votes, follows, your wishlist, the record of pieces that have left, looks
 friends made for you, what you have lent, borrowed or asked to borrow, your
@@ -412,9 +419,24 @@ can be accounted for.
 
 If you are in the EU or UK, you can ask for a copy of your data, and to correct,
 delete, restrict or port it, or object to how it is used. Much of this you can
-do in the app; for the rest, email **krzysiu.leszcz@outlook.com** and we will
-answer within one month. You can also complain to your national data protection
-authority.
+do in the app:
+
+- **A copy of your data**: Settings → Your data → Download your data makes one
+  file (JSON, which other services can read) with everything the app keeps
+  about you, and links to your private photos that work for seven days.
+- **Correcting it**: every piece, post and profile detail can be edited where
+  it is shown.
+- **Deleting it**: delete anything you posted or stored, or the whole account
+  in Settings → Your data.
+- **Withdrawing consent**: location in your phone's settings; the backup AI in
+  Settings → Privacy and safety.
+- **Limiting who sees you**: a private account, closet sharing and blocking,
+  all in Settings → Privacy and safety.
+
+For anything else, email **krzysiu.leszcz@outlook.com** and we will answer
+within one month. You can also complain to your national data protection
+authority — in Poland, the President of the Personal Data Protection Office
+(UODO).
 
 ## Children
 

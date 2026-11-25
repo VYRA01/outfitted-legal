@@ -5,7 +5,7 @@ permalink: /terms/
 
 # Terms of Use — Snapwear
 
-**Last updated: 16 November 2026**
+**Last updated: 24 November 2026**
 
 These terms are the agreement between you and **Chris Leszczynski**, in
 Poland ("we", "us"), who runs Snapwear.
@@ -28,6 +28,11 @@ Keep your password to yourself — you are responsible for what happens under
 your account. Your username must follow the in-app rules and must not
 impersonate anyone.
 
+Your privacy controls are together in **Settings → Privacy and safety**: a
+private account, who can look through your closet, the people you have
+blocked, and whether the backup AI may be used (section 5). **Settings → Your
+data** gives you a copy of your data or deletes your account.
+
 "Explore with a sample closet" creates a temporary account holding clothes we
 provide. Sample accounts can be removed at any time.
 
@@ -49,10 +54,33 @@ unlawful where you or we are.
 
 **How we enforce them.** Photos are checked automatically before they are
 published, and a post that cannot be checked is not published. Anyone can
-**report** a post and **block** a user from inside the app. We review reports
-and aim to act on them within 24 hours: removing the content, and suspending or
-permanently closing the accounts responsible. Automated checks are not perfect;
-reporting is how you help.
+**report** a post, a story or a message and **block** a user from inside the
+app; blocked accounts are listed in Settings, where they can be unblocked. We
+review reports and aim to act on them within 24 hours: removing the content,
+and suspending or permanently closing the accounts responsible. Automated
+checks are not perfect; reporting is how you help.
+
+**Reporting illegal content without the app.** Anyone — with an account or
+without — can tell us about content they believe is illegal by writing to
+**krzysiu.leszcz@outlook.com**. Say where it is (the account name, and what the
+post shows), why you believe it is illegal, and your name and email address
+(except for reports of child sexual abuse material, which can be anonymous).
+We confirm that we received it and tell you what we decided.
+
+**When we act, we tell you why.** If we remove or hide something of yours, or
+suspend or close your account, we tell you what we did, which rule or law it
+was under, and whether the decision was made or helped by an automated check.
+
+**Appeals.** For six months after such a decision you can contest it, free of
+charge, from **Settings → Help and legal → Appeal a decision** (or by email).
+A person — not an automated system — looks at it again, and we reverse the
+decision if it was wrong. If you live in the EU, you can also take the dispute
+to an out-of-court dispute settlement body certified under the Digital
+Services Act, or to a court.
+
+**Misuse.** We may suspend, for a reasonable time and after a warning, an
+account that often posts manifestly illegal content, or someone who often
+sends reports that are manifestly unfounded.
 
 ## 4. What you post
 
@@ -97,7 +125,15 @@ owner can close it to you at any time.
 
 ## 5. Max and AI features
 
-Max, closet sorting, styling suggestions and try-on are powered by AI.
+Max, closet sorting, styling suggestions and try-on are powered by AI. Max
+runs on a server we operate.
+
+**The backup AI is only used with your permission.** When our own server is
+not answering, Snapwear can send a request instead to Claude, an AI made by
+Anthropic. The first time that would happen, the app asks you, names
+Anthropic and says what would be sent. Until you agree, nothing is sent to
+Anthropic, and you can change your answer at any time in **Settings → Privacy
+and safety → Backup AI**. The Privacy Policy describes what is sent.
 
 - **AI output can be wrong.** A guessed brand, colour, price or cost per wear
   is an estimate; every field can be edited.
@@ -106,7 +142,20 @@ Max, closet sorting, styling suggestions and try-on are powered by AI.
 - **Suggestions are not professional advice.**
 - Do not send Max anything you would not want processed by an automated system.
 
-## 6. Shopping, wishlists and selling
+## 6. How the feed and Discover choose what you see
+
+There are no ads, and nothing is ranked by a profile of your interests. In
+the feed, **For you** shows the newest public posts from everyone, newest
+first — the same for everybody, not chosen for you. **Following** shows posts
+from the people you follow, and what they reposted, newest first. **Trending**
+weighs how many likes a recent post has against how old it is. In
+**Discover**, **Recent** is newest first and **Popular** puts the most liked of
+the recent posts first. People suggested to follow are the most recently
+joined accounts you do not follow yet. Accounts you have blocked are never
+shown. You choose between these views with the tabs at the top of each
+screen.
+
+## 7. Shopping, wishlists and selling
 
 Snapwear sells nothing. Shop results, wishlist links and the resale sites
 under **Sell it** — Vinted, Vestiaire Collective and Depop — are other
@@ -119,7 +168,7 @@ be out of date. The rough carbon figures in Insights are published averages for
 a kind of garment, from ADEME, the French environment agency — they are not a
 measurement of your own clothes and are not advice.
 
-## 7. Music
+## 8. Music
 
 The music that plays on posts was shared by its artists under Creative Commons
 licences (CC0 or CC BY); the artist and the licence are shown with it. A known
@@ -127,7 +176,7 @@ song on a post is only named. Tapping it opens a music service of your choice,
 outside Snapwear and under that service's own terms; Snapwear does not play
 it.
 
-## 8. Subscriptions
+## 9. Subscriptions
 
 Snapwear is free to use. On the free plan some features have daily or monthly
 limits, and a closet holds up to 500 pieces; paid subscriptions raise or remove
@@ -145,24 +194,33 @@ limit ever goes down, what you already have stays: only adding more stops.
 - **Refunds** are handled by the store you paid through — Apple's App Store or
   Google Play — under that store's refund policy; we cannot refund a store
   purchase ourselves.
+- **Price changes** are announced by the store before they apply to you; where
+  the law or the store requires it, a higher price needs your agreement first.
+- **If you live in the EU,** you have a right to withdraw from a purchase of
+  digital content or services within 14 days, which you use through the store
+  you bought from. Where a subscription starts at once, the store may ask you to
+  agree that it starts within those 14 days, so that you then pay for what you
+  have used.
 - Daily allowances reset each day (UTC) and monthly ones at the start of each
   calendar month; neither rolls over.
 
-## 9. Our app
+## 10. Our app
 
 Snapwear — its design, code, name and the sample-closet photos — belongs to
 us. You may use the app for your own personal use; you may not copy, resell,
 reverse-engineer or overload it, or access it by automated means.
 
-## 10. Ending your use
+## 11. Ending your use
 
-You can delete your account at any time from **Profile → Delete Account**,
-which permanently removes your data as described in the Privacy Policy.
+You can delete your account at any time from **Settings → Your data → Delete
+account** (also at the foot of your profile), which permanently removes your
+data as described in the Privacy Policy. Before that, **Settings → Your data →
+Download your data** gives you a copy to keep.
 
 We may suspend or close an account that breaks these terms, or remove content
 that does. Where it is reasonable and lawful, we will tell you why.
 
-## 11. Liability
+## 12. Liability
 
 We work to keep Snapwear available and safe, but we provide it **as is** and
 cannot promise it will always be available, error-free, or that AI output is
@@ -173,18 +231,55 @@ that cannot be waived, or our liability for death or personal injury caused by
 negligence, or for fraud. Otherwise, to the extent the law allows, we are not
 liable for indirect or unforeseeable loss.
 
-## 12. Changes to these terms
+## 13. Changes to these terms
 
 We may update these terms. If a change is significant, we will tell you in the
 app before it takes effect. Continuing to use Snapwear after that means you
 accept the new terms.
 
-## 13. Law and disputes
+## 14. If you got Snapwear from Apple's App Store or Google Play
+
+These terms are between you and us, not Apple or Google. If you downloaded
+Snapwear from the App Store, the following also applies, to the extent the
+law allows:
+
+- **Licence.** We give you a personal, non-transferable licence to use
+  Snapwear on Apple-branded devices that you own or control, as the Usage
+  Rules in the App Store's terms allow (including Family Sharing).
+- **Responsibility.** We alone, not Apple, are responsible for Snapwear and
+  its content, and for maintaining and supporting it. Apple has no obligation
+  to provide maintenance or support for it.
+- **Warranty.** If Snapwear fails to conform to any warranty that applies to
+  it, you can tell Apple, and Apple will refund the price you paid for the app
+  itself, if any. To the extent the law allows, Apple has no other warranty
+  obligation regarding Snapwear.
+- **Claims.** We, not Apple, are responsible for handling any claim relating
+  to Snapwear or your use of it — including product liability, failure to meet
+  a legal or regulatory requirement, and claims under consumer-protection,
+  privacy or similar laws — and for investigating, defending and settling any
+  claim that Snapwear infringes someone's intellectual property.
+- **Legal compliance.** You confirm that you are not in a country subject to a
+  US Government embargo, or designated by the US Government as
+  "terrorist-supporting", and that you are not on any US Government list of
+  prohibited or restricted parties.
+- **Other services.** You must follow the terms of any third party you use
+  with Snapwear, such as your mobile carrier.
+- **Third-party beneficiary.** Apple and its subsidiaries are third-party
+  beneficiaries of these terms and, once you accept them, may enforce them
+  against you.
+
+Google Play's own terms apply alongside these if you downloaded Snapwear from
+Google Play.
+
+## 15. Law and disputes
 
 These terms are governed by the laws of Poland. If you are a consumer in the
 EU, you also keep the protection of the mandatory laws of the country where you
 live, and you can bring a claim in its courts.
 
-## 14. Contact
+## 16. Contact
 
-Questions, reports or complaints: **krzysiu.leszcz@outlook.com**
+Questions, reports or complaints: **krzysiu.leszcz@outlook.com**, or
+**Settings → Help and legal** in the app. This is also our single point of
+contact for users and for authorities under the Digital Services Act; you can
+write to us in English or Polish.
